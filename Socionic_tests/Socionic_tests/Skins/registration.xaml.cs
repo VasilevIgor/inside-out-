@@ -21,7 +21,7 @@ namespace Socionic_tests.Skins
     {
         public registration()
         {
-            InitializeComponent();
+            
         }
     }
 }
