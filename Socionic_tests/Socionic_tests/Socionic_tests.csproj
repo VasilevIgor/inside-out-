@@ -94,6 +94,9 @@
     <Compile Include="Skins\registration.xaml.cs">
       <DependentUpon>registration.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Skins\testing_form1.xaml.cs">
+      <DependentUpon>testing_form1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Skins\registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Skins\testing_form1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
