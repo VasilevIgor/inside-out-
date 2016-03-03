@@ -1,0 +1,36 @@
+﻿<Window x:Class="Socionic_tests.Skins.creation_form1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Socionic_tests.Skins"
+        mc:Ignorable="d"
+        Title="creation_form1" Height="300" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">Creation mode</TextBlock>
+        <TextBlock Grid.Row="2" Margin="7 0" VerticalAlignment="Center">Section</TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center"></TextBox>
+        <TextBlock Grid.Row="3" Margin="7 0" VerticalAlignment="Center">Test</TextBlock>
+        <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center"></TextBox>
+        <TextBlock Grid.Row="4" Margin="7 0" VerticalAlignment="Center">Number of questions</TextBlock>
+        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center"></TextBox>
+        <Button Grid.Row="7" Margin="60 0" VerticalAlignment="Center">Next</Button>
+        <Button Grid.Row="7" Grid.Column="1" Margin="60 0" VerticalAlignment="Center">Cancel</Button>
+    </Grid>
+</Window>
