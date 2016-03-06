@@ -13,13 +13,17 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">choose mode for tests</TextBlock>
-        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="90 15" VerticalAlignment="Center">take</Button>
-        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="90 15" VerticalAlignment="Center">create</Button>
+        <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="90 0" VerticalAlignment="Center">take</Button>
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="90 0" VerticalAlignment="Center">create</Button>
+        <TextBlock Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">or</TextBlock>
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Margin="90 0" VerticalAlignment="Center">go to profile</Button>
     </Grid>
 </Window>
