@@ -1,0 +1,40 @@
+﻿<Window x:Class="Socionic_tests.Skins.TestSelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Socionic_tests.Skins"
+        mc:Ignorable="d"
+        Title="TestSelectionWindow" Height="270" Width="500" MinWidth="400" MinHeight="220">
+    <Grid Margin="20 20" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" MaxWidth="100" MinWidth="80" VerticalAlignment="Top" FontSize="14">Begin</Button>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14" Height="18">Select test</TextBlock>
+                <TextBlock Grid.Row="1" Margin="7 0"  VerticalAlignment="Center" FontSize="14" Height="18">Section</TextBlock>
+                <ComboBox Grid.Row="1" Grid.Column="1"  VerticalAlignment="Center" FontSize="14" Height="22"/>
+                <TextBlock Grid.Row="2" Margin="7 0"  VerticalAlignment="Center" FontSize="14" Height="18">Test</TextBlock>
+                <ComboBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
