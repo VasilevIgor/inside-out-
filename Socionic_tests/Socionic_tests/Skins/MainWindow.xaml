@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         mc:Ignorable="d"
-        Title="MainWindow" Height="270" Width="430">
-    <Grid>
+        Title="MainWindow" Height="280" Width="300" ResizeMode="NoResize">
+    <Grid Margin="10 10">
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
@@ -20,8 +20,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">WELCOME TO INSIDE OUT</TextBlock>
-        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="150 0" VerticalAlignment="Center">create account</Button>
+        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="80 0">create account</Button>
         <TextBlock Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">or</TextBlock>
-        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Margin="150 0" VerticalAlignment="Center">log in</Button>
+        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="80 0">log in</Button>
     </Grid>
 </Window>

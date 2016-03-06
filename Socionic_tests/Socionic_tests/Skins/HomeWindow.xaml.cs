@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Socionic_tests.Skins
 {
     /// <summary>
-    /// Interaction logic for home.xaml
+    /// Interaction logic for HomeWindow.xaml
     /// </summary>
-    public partial class home : Window
+    public partial class HomeWindow : Window
     {
-        public home()
+        public HomeWindow()
         {
             InitializeComponent();
         }

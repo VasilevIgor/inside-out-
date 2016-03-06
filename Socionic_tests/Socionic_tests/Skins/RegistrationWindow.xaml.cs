@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Socionic_tests.Skins
 {
     /// <summary>
-    /// Interaction logic for registration.xaml
+    /// Interaction logic for RegistrationWindow.xaml
     /// </summary>
-    public partial class registration : Window
+    public partial class RegistrationWindow : Window
     {
-        public registration()
+        public RegistrationWindow()
         {
             
         }
