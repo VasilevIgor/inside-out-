@@ -5,35 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         mc:Ignorable="d"
-        Title="RegistrationWindow"  Height="270" Width="430" ResizeMode="NoResize">
-    <Grid Margin="10 10">
+        Title="RegistrationWindow" Height="320" Width="580" MinWidth="400" MinHeight="280">
+    <Grid Margin="20 20" VerticalAlignment="Center">
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="180"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Margin="7 0" VerticalAlignment="Center">Name</TextBlock>
-        <TextBox  Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center"></TextBox>
-        <TextBlock Grid.Row="1" Margin="7 0" VerticalAlignment="Center">Surname</TextBlock>
-        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center"></TextBox>
-        <TextBlock Grid.Row="2" Margin="7 0" VerticalAlignment="Center">Login</TextBlock>
-        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center"></TextBox>
-        <TextBlock Grid.Row="3" Margin="7 0" VerticalAlignment="Center" >Password</TextBlock>
-        <PasswordBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center"></PasswordBox>
-        <TextBlock Grid.Row="4" Margin="7 0" VerticalAlignment="Center" >Repeat Password</TextBlock>
-        <PasswordBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center"></PasswordBox>
-        <Button Grid.Row="6" Margin="60 0" VerticalAlignment="Center">Register</Button>
-        <Button Grid.Row="6" Grid.Column="1" Margin="60 0" VerticalAlignment="Center">Cancel</Button>
+        <Button Grid.Row="1" MaxWidth="100" MinWidth="80" VerticalAlignment="Top" FontSize="14">Register</Button>
+        <Button Grid.Row="1" Grid.Column="1" MaxWidth="100" MinWidth="80" VerticalAlignment="Top" FontSize="14">Cancel</Button>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Margin="7,6" VerticalAlignment="Center" FontSize="14" Height="18">Name</TextBlock>
+                <TextBox  Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22" Margin="0,4"/>
+                <TextBlock Grid.Row="1" Margin="7,6" VerticalAlignment="Center" FontSize="14" Height="18">Surname</TextBlock>
+                <TextBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22" Margin="0,4"/>
+                <TextBlock Grid.Row="2" Margin="7,6" VerticalAlignment="Center" FontSize="14" Height="18">Login</TextBlock>
+                <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22" Margin="0,4"/>
+                <TextBlock Grid.Row="3" Margin="7,6" VerticalAlignment="Center" FontSize="14" Height="18">Password</TextBlock>
+                <PasswordBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22" Margin="0,4"/>
+                <TextBlock Grid.Row="4" Margin="7,6" VerticalAlignment="Center" FontSize="14" Height="18">Repeat Password</TextBlock>
+                <PasswordBox Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22" Margin="0,4"/>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>
