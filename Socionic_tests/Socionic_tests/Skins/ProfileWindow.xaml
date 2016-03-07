@@ -5,49 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         mc:Ignorable="d"
-        Title="ProfileWindow" Height="320" Width="515" ResizeMode="NoResize" >
-    <Grid Margin="10 10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition />
-            <RowDefinition Height="30"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">PROFILE</TextBlock>
-        <Button  Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="200 5">home</Button>
-        <StackPanel Grid.Row="1" Grid.Column="0">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition Height="180"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="40 20"></Image>
-                <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="70 0">upload image</Button>
-
-            </Grid>
-        </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="1">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition Height="180"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">test history</TextBlock>
-                <ListBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="40 20" BorderBrush="Black"></ListBox>
-            </Grid>
-        </StackPanel>
-    </Grid>
+        Title="ProfileWindow" Height="400" Width="800" MinWidth="700" MinHeight="380">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Menu" FontSize="14" Height="20">
+                <MenuItem Header="Profile" FontSize="14" Height="20"/>
+                <MenuItem Header="New test" FontSize="14" Height="20">
+                    <MenuItem Header="Take" FontSize="14" Height="20"/>
+                    <MenuItem Header="Create" FontSize="14" Height="20"/>
+                </MenuItem>
+                <MenuItem Header="Log out"  FontSize="14" Height="20"/>
+                <MenuItem Header="About" FontSize="14" Height="20">
+                    <MenuItem Header="read" FontSize="14" Height="20"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Margin="20 20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14">PROFILE</TextBlock>
+            <Image Grid.Row="1" Grid.Column="0" Margin="80 20 80 20"></Image>
+            <Button Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" MaxWidth="120" FontSize="14">Upload image</Button>
+            <ListBox Grid.Row="1" Grid.Column="1" Margin="20 20 20 20" FontSize="14">
+                <ListBoxItem>passed test 1</ListBoxItem>
+                <ListBoxItem>passed test 2</ListBoxItem>
+                <ListBoxItem>passed test 3</ListBoxItem>
+                <ListBoxItem>passed test 4</ListBoxItem>
+                <ListBoxItem>passed test 5</ListBoxItem>
+                <ListBoxItem>passed test 6</ListBoxItem>
+                <ListBoxItem>passed test 7</ListBoxItem>
+                <ListBoxItem>passed test 8</ListBoxItem>
+            </ListBox>
+            <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14">Test history</TextBlock>
+        </Grid>
+    </DockPanel>
 </Window>
