@@ -2,38 +2,69 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Socionic_tests.Skins"
-        mc:Ignorable="d"
-        Title="ProfileWindow" Height="400" Width="800" MinWidth="700" MinHeight="380">
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="ProfileWindow"
+        Width="800"
+        Height="400"
+        MinWidth="700"
+        MinHeight="380"
+        mc:Ignorable="d">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Menu" FontSize="14" Height="20">
-                <MenuItem Header="Profile" FontSize="14" Height="20"/>
-                <MenuItem Header="New test" FontSize="14" Height="20">
-                    <MenuItem Header="Take" FontSize="14" Height="20"/>
-                    <MenuItem Header="Create" FontSize="14" Height="20"/>
+            <MenuItem Height="20"
+                      FontSize="14"
+                      Header="Menu">
+                <MenuItem Height="20"
+                          FontSize="14"
+                          Header="Profile" />
+                <MenuItem Height="20"
+                          FontSize="14"
+                          Header="New test">
+                    <MenuItem Height="20"
+                              FontSize="14"
+                              Header="Take" />
+                    <MenuItem Height="20"
+                              FontSize="14"
+                              Header="Create" />
                 </MenuItem>
-                <MenuItem Header="Log out"  FontSize="14" Height="20"/>
-                <MenuItem Header="About" FontSize="14" Height="20">
-                    <MenuItem Header="read" FontSize="14" Height="20"/>
+                <MenuItem Height="20"
+                          FontSize="14"
+                          Header="Log out" />
+                <MenuItem Height="20"
+                          FontSize="14"
+                          Header="About">
+                    <MenuItem Height="20"
+                              FontSize="14"
+                              Header="read" />
                 </MenuItem>
             </MenuItem>
         </Menu>
         <Grid Margin="20 20">
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="30"/>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="30" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14">PROFILE</TextBlock>
-            <Image Grid.Row="1" Grid.Column="0" Margin="80 20 80 20"></Image>
-            <Button Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" MaxWidth="120" FontSize="14">Upload image</Button>
-            <ListBox Grid.Row="1" Grid.Column="1" Margin="20 20 20 20" FontSize="14">
+            <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="14">
+                PROFILE
+            </TextBlock>
+            <Image Grid.Row="1"
+                   Grid.Column="0"
+                   Margin="80 20 80 20" />
+            <ListBox Grid.Row="1"
+                     Grid.Column="1"
+                     Margin="20 20 20 20"
+                     FontSize="14">
                 <ListBoxItem>passed test 1</ListBoxItem>
                 <ListBoxItem>passed test 2</ListBoxItem>
                 <ListBoxItem>passed test 3</ListBoxItem>
@@ -43,7 +74,20 @@
                 <ListBoxItem>passed test 7</ListBoxItem>
                 <ListBoxItem>passed test 8</ListBoxItem>
             </ListBox>
-            <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14">Test history</TextBlock>
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    MaxWidth="120"
+                    VerticalAlignment="Top"
+                    FontSize="14">
+                Upload image
+            </Button>
+            <TextBlock Grid.Row="2"
+                       Grid.Column="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontSize="14">
+                Test history
+            </TextBlock>
         </Grid>
     </DockPanel>
 </Window>

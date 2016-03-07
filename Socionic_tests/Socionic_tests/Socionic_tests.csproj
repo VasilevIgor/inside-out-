@@ -71,7 +71,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <ApplicationDefinition Include="Skins\App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
@@ -100,9 +100,15 @@
     <Compile Include="Skins\TestSelectionWindow.xaml.cs">
       <DependentUpon>TestSelectionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\CreationViewModel1.cs" />
+    <Compile Include="ViewModel\LoginViewModel1.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\ProfileViewModel1.cs" />
+    <Compile Include="ViewModel\RegistrationViewModel1.cs" />
+    <Compile Include="ViewModel\TestingViewModel1.cs" />
+    <Compile Include="ViewModel\TestSelectionViewModel1.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="App.xaml.cs">
+    <Compile Include="Skins\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
