@@ -9,10 +9,14 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Menu" FontSize="14" Height="20">
-                <MenuItem Header="Profile" HorizontalAlignment="Left" FontSize="14" Height="20"/>
-                <MenuItem Header="New test" HorizontalAlignment="Left" FontSize="14" Height="20">
+                <MenuItem Header="Profile" FontSize="14" Height="20"/>
+                <MenuItem Header="New test" FontSize="14" Height="20">
                     <MenuItem Header="Take" FontSize="14" Height="20"/>
                     <MenuItem Header="Create" FontSize="14" Height="20"/>
+                </MenuItem>
+                <MenuItem Header="Log out"  FontSize="14" Height="20"/>
+                <MenuItem Header="About" FontSize="14" Height="20">
+                    <MenuItem Header="read" FontSize="14" Height="20"/>
                 </MenuItem>
             </MenuItem>
         </Menu>
@@ -36,7 +40,7 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="100"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14" Height="18">Select test</TextBlock>

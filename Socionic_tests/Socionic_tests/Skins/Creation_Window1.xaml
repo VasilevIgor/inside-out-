@@ -9,10 +9,14 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Menu" FontSize="14" Height="20">
-                <MenuItem Header="Profile" HorizontalAlignment="Left" FontSize="14" Height="20"/>
-                <MenuItem Header="New test" HorizontalAlignment="Left" FontSize="14" Height="20">
+                <MenuItem Header="Profile" FontSize="14" Height="20"/>
+                <MenuItem Header="New test" FontSize="14" Height="20">
                     <MenuItem Header="Take" FontSize="14" Height="20"/>
                     <MenuItem Header="Create" FontSize="14" Height="20"/>
+                </MenuItem>
+                <MenuItem Header="Log out"  FontSize="14" Height="20"/>
+                <MenuItem Header="About" FontSize="14" Height="20">
+                    <MenuItem Header="read" FontSize="14" Height="20"/>
                 </MenuItem>
             </MenuItem>
         </Menu>
@@ -43,9 +47,9 @@
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14">Creation mode</TextBlock>
                     <TextBlock Grid.Row="1" Margin="7 0" VerticalAlignment="Center" FontSize="14" Height="18">Section</TextBlock>
-                    <ComboBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22" Margin="0,4"/>
+                    <ComboBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22"/>
                     <TextBlock Grid.Row="2" Margin="7 0" VerticalAlignment="Center" FontSize="14" Height="18">Test</TextBlock>
-                    <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22" Margin="0,4"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22"/>
                     <TextBlock Grid.Row="3" Margin="7 0" VerticalAlignment="Center" FontSize="14" Height="18">Number of questions</TextBlock>
                     <Slider Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"></Slider>
                 </Grid>
