@@ -13,6 +13,7 @@
     <Grid Margin="10 10">
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
@@ -23,25 +24,88 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14">WELCOME TO INSIDE OUT</TextBlock>
-        <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="14" MaxWidth="140" MinWidth="120">create account</Button>
-        <TextBlock Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14">or</TextBlock>
-        <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="14" MaxWidth="140" MinWidth="120">log in with vk</Button>
-        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
+        <TextBlock 
+            Grid.Row="1" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="2" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            FontSize="14">
+            WELCOME TO INSIDE OUT
+        </TextBlock>
+        <Button 
+            Grid.Row="3" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="2" 
+            VerticalAlignment="Center" 
+            FontSize="14" 
+            MaxWidth="140" 
+            MinWidth="120">
+            create account
+        </Button>
+        <TextBlock 
+            Grid.Row="4" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="2" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            FontSize="14">
+            or
+        </TextBlock>
+        <Button 
+            Grid.Row="5" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="2" 
+            VerticalAlignment="Center" 
+            FontSize="14" 
+            MaxWidth="140" 
+            MinWidth="120">
+            log in with vk
+        </Button>
+        <StackPanel 
+            Grid.Row="2" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="2" 
+            VerticalAlignment="Center">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition Height="30"/>
+                    <RowDefinition 
+                        Height="30"/>
+                    <RowDefinition 
+                        Height="30"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition 
+                        Width="150"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Row="0" Margin="7 0" VerticalAlignment="Center" FontSize="14" Height="18">Login</TextBlock>
-                <TextBox  Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22"/>
-                <TextBlock Grid.Row="1" Margin="7 0" VerticalAlignment="Center" FontSize="14" Height="18">Password</TextBlock>
-                <PasswordBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" FontSize="14" Height="22"/>
+                <TextBlock 
+                    Grid.Row="0" 
+                    Margin="7 0" 
+                    VerticalAlignment="Center" 
+                    FontSize="14" 
+                    Height="18">
+                    Login
+                </TextBlock>
+                <TextBox  
+                    Grid.Column="1" 
+                    VerticalAlignment="Center" 
+                    FontSize="14" 
+                    Height="22"/>
+                <TextBlock 
+                    Grid.Row="1" 
+                    Margin="7 0" 
+                    VerticalAlignment="Center" 
+                    FontSize="14" Height="18">
+                    Password
+                </TextBlock>
+                <PasswordBox 
+                    Grid.Row="1" 
+                    Grid.Column="1" 
+                    VerticalAlignment="Center" 
+                    FontSize="14" 
+                    Height="22"/>
             </Grid>
         </StackPanel>
     </Grid>
