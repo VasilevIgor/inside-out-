@@ -82,6 +82,9 @@
     <Compile Include="Skins\Creation_Window1.xaml.cs">
       <DependentUpon>Creation_Window1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Skins\Creation_Window2.xaml.cs">
+      <DependentUpon>Creation_Window2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Skins\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -110,6 +113,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Skins\Creation_Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Skins\Creation_Window2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

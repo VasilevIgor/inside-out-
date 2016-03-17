@@ -32,6 +32,7 @@
                           Header="Log out" />
                 <MenuItem Height="20"
                           FontSize="14"
+                          Cursor="Help"
                           Header="About">
                     <MenuItem Height="20"
                               FontSize="14"
@@ -68,6 +69,7 @@
                    Margin="300 20 300 20">
             </Image>
             <Button Grid.Row="2" 
+                    Cursor="Hand"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     MaxWidth="120" 
