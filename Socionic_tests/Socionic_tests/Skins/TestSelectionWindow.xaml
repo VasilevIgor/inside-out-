@@ -9,6 +9,8 @@
         Height="280"
         MinWidth="400"
         MinHeight="240"
+        DataContext="{Binding SelectTest,
+                              Source={StaticResource Locator}}"
         mc:Ignorable="d">
     <DockPanel>
         <Menu DockPanel.Dock="Top">

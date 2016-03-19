@@ -39,6 +39,12 @@ namespace Socionic_tests.ViewModel
             }
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<CreationVievModel_2>();
+             SimpleIoc.Default.Register<CreationViewModel1>();
+             SimpleIoc.Default.Register<ProfileViewModel1>();
+             SimpleIoc.Default.Register<RegistrationViewModel1>();
+             SimpleIoc.Default.Register<TestingViewModel1>();
+             SimpleIoc.Default.Register<TestSelectionViewModel1>();
         }
 
         /// <summary>
@@ -52,6 +58,48 @@ namespace Socionic_tests.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
+            }
+        }
+        public CreationViewModel1 TestCreationPartOne
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<CreationViewModel1>();
+            }
+        }
+        public CreationVievModel_2 TestCreationPartTwo
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<CreationVievModel_2>();
+            }
+        }
+        public TestSelectionViewModel1 SelectTest
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<TestSelectionViewModel1>();
+            }
+        }
+        public ProfileViewModel1 ChangeProfile
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<ProfileViewModel1>();
+            }
+        }
+        public RegistrationViewModel1 RegisterProfole
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<RegistrationViewModel1>();
+            }
+        }
+        public TestingViewModel1 Testing
+        {
+             get
+            {
+                return ServiceLocator.Current.GetInstance<TestingViewModel1>();
             }
         }
 

@@ -5,10 +5,12 @@
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="ProfileWindow"
-         Width="900"
+        Width="900"
         Height="680"
         MinWidth="700"
-        MinHeight="380">
+        MinHeight="380"
+        DataContext="{Binding ChangeProfile,
+                              Source={StaticResource Locator}}">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Height="20"
@@ -31,8 +33,8 @@
                           FontSize="14"
                           Header="Log out" />
                 <MenuItem Height="20"
-                          FontSize="14"
                           Cursor="Help"
+                          FontSize="14"
                           Header="About">
                     <MenuItem Height="20"
                               FontSize="14"
@@ -46,8 +48,8 @@
                 <RowDefinition Height="200" />
                 <RowDefinition Height="30" />
                 <RowDefinition Height="30" />
-                <RowDefinition Height="250"/>
-                <RowDefinition Height="30"/>
+                <RowDefinition Height="250" />
+                <RowDefinition Height="30" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
@@ -61,21 +63,34 @@
                        FontSize="14">
                 PROFILE
             </TextBlock>
-            <Image x:Name="pic1" 
-                   Source="pic1.jpg" 
-                   Grid.Row="1" 
-                   Grid.Column="0" 
-                   Grid.ColumnSpan="2" 
-                   Margin="300 20 300 20">
-            </Image>
-            <Button Grid.Row="2" 
-                    Cursor="Hand"
+            <Image x:Name="pic1"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Margin="300 20 300 20"
+                   Source="pic1.jpg" />
+            <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    MaxWidth="120" 
+                    MaxWidth="120"
+                    Cursor="Hand"
                     FontSize="14">
                 upload image
             </Button>
+            <TextBlock Grid.Row="3"
+                       Grid.Column="0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontSize="14">
+                Passed tests
+            </TextBlock>
+            <TextBlock Grid.Row="3"
+                       Grid.Column="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontSize="14">
+                Created tests
+            </TextBlock>
             <ListBox Grid.Row="4"
                      Grid.Column="0"
                      Margin="100 10 100 10"
@@ -94,7 +109,7 @@
             </ListBox>
             <ListBox Grid.Row="4"
                      Grid.Column="1"
-                         Margin="100 10 100 10"
+                     Margin="100 10 100 10"
                      FontSize="14">
                 <ListBoxItem>passed test 1</ListBoxItem>
                 <ListBoxItem>passed test 2</ListBoxItem>
@@ -109,28 +124,14 @@
                 <ListBoxItem>passed test 8</ListBoxItem>
                 <ListBoxItem>passed test 8</ListBoxItem>
             </ListBox>
-            <TextBlock Grid.Row="3"
-                    Grid.Column="0"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Top"
-                    FontSize="14">
-                Passed tests
-            </TextBlock>
-            <TextBlock Grid.Row="3"
-                       Grid.Column="1"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Top"
-                       FontSize="14">
-                Created tests
-            </TextBlock>
-            <Button Grid.Row="5" 
-                    MaxWidth="120"  
+            <Button Grid.Row="5"
+                    MaxWidth="120"
                     FontSize="14">
                 take new
             </Button>
-            <Button Grid.Row="5" 
-                    Grid.Column="1" 
-                    MaxWidth="120"  
+            <Button Grid.Row="5"
+                    Grid.Column="1"
+                    MaxWidth="120"
                     FontSize="14">
                 create new
             </Button>

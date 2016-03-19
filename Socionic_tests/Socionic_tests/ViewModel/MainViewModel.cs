@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 using Socionic_tests.Model;
 
 namespace Socionic_tests.ViewModel
@@ -11,55 +12,30 @@ namespace Socionic_tests.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        private readonly IDataService _dataService;
-
-        /// <summary>
-        /// The <see cref="WelcomeTitle" /> property's name.
-        /// </summary>
-        public const string WelcomeTitlePropertyName = "WelcomeTitle";
-
-        private string _welcomeTitle = string.Empty;
-
-        /// <summary>
-        /// Gets the WelcomeTitle property.
-        /// Changes to that property's value raise the PropertyChanged event. 
-        /// </summary>
-        public string WelcomeTitle
+        public MainViewModel()
         {
-            get
-            {
-                return _welcomeTitle;
-            }
-            set
-            {
-                Set(ref _welcomeTitle, value);
-            }
+            SignIn = new RelayCommand(Sign_In);
+            SignUp = new RelayCommand(Sign_Up);
+            LogVK = new RelayCommand(Log_VK);
         }
 
-        /// <summary>
-        /// Initializes a new instance of the MainViewModel class.
-        /// </summary>
-        public MainViewModel(IDataService dataService)
+        private void Log_VK()
         {
-            _dataService = dataService;
-            _dataService.GetData(
-                (item, error) =>
-                {
-                    if (error != null)
-                    {
-                        // Report error here
-                        return;
-                    }
-
-                    WelcomeTitle = item.Title;
-                });
+           
         }
 
-        ////public override void Cleanup()
-        ////{
-        ////    // Clean up if needed
+        private void Sign_Up()
+        {
+            
+        }
 
-        ////    base.Cleanup();
-        ////}
+        private void Sign_In()
+        {
+            
+        }
+
+        public RelayCommand SignIn { get; set; }
+        public RelayCommand SignUp { get; set; }
+        public RelayCommand LogVK { get; set; }
     }
 }

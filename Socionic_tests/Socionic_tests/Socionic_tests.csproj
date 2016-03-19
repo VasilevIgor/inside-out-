@@ -79,6 +79,7 @@
     <Compile Include="Model\DataItem.cs" />
     <Compile Include="Model\DataService.cs" />
     <Compile Include="Model\IDataService.cs" />
+    <Compile Include="Model\UserDataItem.cs" />
     <Compile Include="Skins\Creation_Window1.xaml.cs">
       <DependentUpon>Creation_Window1.xaml</DependentUpon>
     </Compile>
@@ -102,7 +103,6 @@
     </Compile>
     <Compile Include="ViewModel\CreationVievModel_2.cs" />
     <Compile Include="ViewModel\CreationViewModel1.cs" />
-    <Compile Include="ViewModel\LoginViewModel1.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ProfileViewModel1.cs" />
     <Compile Include="ViewModel\RegistrationViewModel1.cs" />
