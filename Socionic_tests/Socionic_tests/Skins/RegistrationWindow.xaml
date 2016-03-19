@@ -5,15 +5,16 @@
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="RegistrationWindow"
-        Width="580"
-        Height="320"
-        MinWidth="400"
-        MinHeight="280"
+        Width="720"
+        Height="400"
+        MinWidth="420"
+        MinHeight="380"
         mc:Ignorable="d">
     <Grid Margin="20 20" VerticalAlignment="Center">
         <Grid.RowDefinitions>
-            <RowDefinition Height="180" />
-            <RowDefinition />
+            <RowDefinition Height="220" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -22,15 +23,17 @@
         <StackPanel Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    VerticalAlignment="Center">
+                    VerticalAlignment="Center"
+                    Margin="20 20">
             <Grid>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
                     <RowDefinition Height="30" />
                     <RowDefinition Height="30" />
                     <RowDefinition Height="30" />
                     <RowDefinition Height="30" />
                     <RowDefinition Height="30" />
-                    <RowDefinition Height="30" />
+                    <RowDefinition Height="20"/>
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -41,33 +44,20 @@
                          Height="22"
                          Margin="0,4"
                          VerticalAlignment="Center"
-                         FontSize="14" />
-                <TextBlock Grid.Row="0"
-                           Height="18"
-                           Margin="7 0"
-                           VerticalAlignment="Center"
-                           FontSize="14">
-                    Name
-                </TextBlock>
+                         FontSize="14" Grid.Row="1" />
                 <TextBlock Grid.Row="1"
                            Height="18"
                            Margin="7 0"
                            VerticalAlignment="Center"
-                           FontSize="14">
-                    Surname
+                           FontSize="14"
+                           Text="Name">
                 </TextBlock>
-                <TextBox Grid.Row="1"
-                         Grid.Column="1"
-                         Height="22"
-                         Margin="0,4"
-                         VerticalAlignment="Center"
-                         FontSize="14" />
                 <TextBlock Grid.Row="2"
                            Height="18"
                            Margin="7 0"
                            VerticalAlignment="Center"
                            FontSize="14">
-                    Login
+                    Surname
                 </TextBlock>
                 <TextBox Grid.Row="2"
                          Grid.Column="1"
@@ -79,21 +69,21 @@
                            Height="18"
                            Margin="7 0"
                            VerticalAlignment="Center"
-                           FontSize="14">
-                    Password
+                           FontSize="14"
+                           Text="Login">
                 </TextBlock>
-                <PasswordBox Grid.Row="3"
-                             Grid.Column="1"
-                             Height="22"
-                             Margin="0,4"
-                             VerticalAlignment="Center"
-                             FontSize="14" />
+                <TextBox Grid.Row="3"
+                         Grid.Column="1"
+                         Height="22"
+                         Margin="0,4"
+                         VerticalAlignment="Center"
+                         FontSize="14" />
                 <TextBlock Grid.Row="4"
                            Height="18"
                            Margin="7 0"
                            VerticalAlignment="Center"
-                           FontSize="14">
-                    Repeat Password
+                           FontSize="14"
+                           Text="Password">
                 </TextBlock>
                 <PasswordBox Grid.Row="4"
                              Grid.Column="1"
@@ -101,22 +91,41 @@
                              Margin="0,4"
                              VerticalAlignment="Center"
                              FontSize="14" />
+                <TextBlock Grid.Row="5"
+                           Height="18"
+                           Margin="7 0"
+                           VerticalAlignment="Center"
+                           FontSize="14"
+                           Text="Repeat Password">
+                </TextBlock>
+                <PasswordBox Grid.Row="5"
+                             Grid.Column="1"
+                             Height="22"
+                             Margin="0,4"
+                             VerticalAlignment="Center"
+                             FontSize="14" />
             </Grid>
         </StackPanel>
-        <Button Grid.Row="1"
+        <Border Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BorderBrush="Black"
+                BorderThickness="1">
+        </Border>
+        <Button Grid.Row="2"
                 MinWidth="80"
                 MaxWidth="100"
-                VerticalAlignment="Top"
-                FontSize="14">
-            Register
+                VerticalAlignment="Center"
+                FontSize="14"
+                Content="Register">
         </Button>
-        <Button Grid.Row="1"
+        <Button Grid.Row="2"
                 Grid.Column="1"
                 MinWidth="80"
                 MaxWidth="100"
-                VerticalAlignment="Top"
-                FontSize="14">
-            Cancel
+                VerticalAlignment="Center"
+                FontSize="14"
+                Content="Cancel">
         </Button>
     </Grid>
 </Window>
