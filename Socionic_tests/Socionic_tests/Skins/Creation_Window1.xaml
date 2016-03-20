@@ -5,10 +5,10 @@
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="Creation_Window1"
-        Width="600"
-        Height="300"
-        MinWidth="480"
-        MinHeight="280"
+        Width="720"
+        Height="440"
+        MinWidth="620"
+        MinHeight="420"
         DataContext="{Binding TestCreationPartOne,
                               Source={StaticResource Locator}}"
         mc:Ignorable="d">
@@ -34,55 +34,56 @@
                           FontSize="14"
                           Header="Log out" />
                 <MenuItem Height="20"
+                          Cursor="Help"
                           FontSize="14"
                           Header="About">
                     <MenuItem Height="20"
                               FontSize="14"
-                              Header="read" />
+                              Header="Read" />
                 </MenuItem>
             </MenuItem>
         </Menu>
         <Grid Margin="20 20" VerticalAlignment="Center">
             <Grid.RowDefinitions>
-                <RowDefinition Height="150" />
-                <RowDefinition />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="230" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <StackPanel Grid.Row="0"
+            <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       Text="CREATION MODE"
+                       TextAlignment="Center" />
+            <StackPanel Grid.Row="1"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
-                        VerticalAlignment="Center">
+                        Margin="20 20">
                 <Grid>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
                         <RowDefinition Height="30" />
                         <RowDefinition Height="30" />
                         <RowDefinition Height="30" />
                         <RowDefinition Height="30" />
                         <RowDefinition Height="30" />
-                        <RowDefinition />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="170" />
+                        <ColumnDefinition Width="250" />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Row="0"
-                               Grid.Column="0"
-                               Grid.ColumnSpan="2"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Top"
-                               FontSize="14">
-                        Creation mode
-                    </TextBlock>
                     <TextBlock Grid.Row="1"
                                Height="18"
                                Margin="7 0"
                                VerticalAlignment="Center"
-                               FontSize="14">
-                        Section
-                    </TextBlock>
+                               FontSize="14"
+                               Text="Section name" />
                     <ComboBox Grid.Row="1"
                               Grid.Column="1"
                               Height="22"
@@ -92,9 +93,13 @@
                                Height="18"
                                Margin="7 0"
                                VerticalAlignment="Center"
-                               FontSize="14">
-                        Test
-                    </TextBlock>
+                               FontSize="14"
+                               Text="Test name" />
+                    <TextBox Grid.Row="2"
+                             Grid.Column="1"
+                             Height="22"
+                             VerticalAlignment="Center"
+                             FontSize="14" />
                     <TextBox Grid.Row="2"
                              Grid.Column="1"
                              Height="22"
@@ -104,29 +109,49 @@
                                Height="18"
                                Margin="7 0"
                                VerticalAlignment="Center"
-                               FontSize="14">
-                        Number of questions
-                    </TextBlock>
+                               FontSize="14"
+                               Text="Number of questions" />
                     <Slider Grid.Row="3"
+                            Grid.Column="1"
+                            VerticalAlignment="Center" />
+                    <TextBlock Grid.Row="4"
+                               Height="18"
+                               Margin="7 0"
+                               VerticalAlignment="Center"
+                               FontSize="14"
+                               Text="Number of answers for each question" />
+                    <Slider Grid.Row="4"
+                            Grid.Column="1"
+                            VerticalAlignment="Center" />
+                    <TextBlock Grid.Row="7"
+                               Height="18"
+                               Margin="7 0"
+                               VerticalAlignment="Center"
+                               FontSize="14"
+                               Text="Number of recommendations" />
+                    <Slider Grid.Row="7"
                             Grid.Column="1"
                             VerticalAlignment="Center" />
                 </Grid>
             </StackPanel>
-            <Button Grid.Row="1"
+            <Border Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    BorderBrush="Black"
+                    BorderThickness="1" />
+            <Button Grid.Row="3"
                     MinWidth="80"
                     MaxWidth="100"
-                    VerticalAlignment="Top"
-                    FontSize="14">
-                Next
-            </Button>
-            <Button Grid.Row="1"
+                    VerticalAlignment="Center"
+                    Content="Next"
+                    FontSize="14" />
+            <Button Grid.Row="3"
                     Grid.Column="1"
                     MinWidth="80"
                     MaxWidth="100"
-                    VerticalAlignment="Top"
-                    FontSize="14">
-                Cancel
-            </Button>
+                    VerticalAlignment="Center"
+                    Content="Cancel"
+                    FontSize="14" />
         </Grid>
     </DockPanel>
 </Window>

@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using Socionic_tests.Model;
+using System.Windows.Input;
 
 namespace Socionic_tests.ViewModel
 {
@@ -12,12 +13,16 @@ namespace Socionic_tests.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        public UserDataItem User { get; set; }
+        public ICommand LogInCommand { get; private set; }
         public MainViewModel()
         {
-            SignIn = new RelayCommand(Sign_In);
+           
             SignUp = new RelayCommand(Sign_Up);
             LogVK = new RelayCommand(Log_VK);
+          LogInCommand = new RelayCommand(this.OnLogInCommand);
         }
+
 
         private void Log_VK()
         {
@@ -28,14 +33,27 @@ namespace Socionic_tests.ViewModel
         {
             
         }
-
-        private void Sign_In()
-        {
-            
-        }
-
-        public RelayCommand SignIn { get; set; }
         public RelayCommand SignUp { get; set; }
         public RelayCommand LogVK { get; set; }
+
+        private void OnLogInCommand()
+        {
+              string testUsername = Username;
+              string testPassword = Password;
+        }
+
+    #region Properties
+    public string Username
+    {
+        get { return User.Login; }
+        set { User.Login = value; }
+    }
+    public string Password
+    {
+        get { return User.Password; }
+        set { User.Password = value; }
+    }
+    #endregion
+        
     }
 }
