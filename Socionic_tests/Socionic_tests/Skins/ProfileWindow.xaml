@@ -72,24 +72,27 @@
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    MaxWidth="120"
+                    MaxHeight ="30"
+                    MaxWidth ="100"
+                    MinHeight="30"
+                    MinWidth="100"
                     Cursor="Hand"
-                    FontSize="14">
-                upload image
+                    FontSize="14"
+                    Content="upload image">
             </Button>
             <TextBlock Grid.Row="3"
                        Grid.Column="0"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Top"
-                       FontSize="14">
-                Passed tests
+                       FontSize="14"
+                       Text="Passed tests">
             </TextBlock>
             <TextBlock Grid.Row="3"
                        Grid.Column="1"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Top"
-                       FontSize="14">
-                Created tests
+                       FontSize="14"
+                       Text="Created tests">
             </TextBlock>
             <ListBox Grid.Row="4"
                      Grid.Column="0"
@@ -125,13 +128,19 @@
                 <ListBoxItem>passed test 8</ListBoxItem>
             </ListBox>
             <Button Grid.Row="5"
-                    MaxWidth="120"
+                    MaxHeight ="30"
+                    MaxWidth ="100"
+                    MinHeight="30"
+                    MinWidth="100"
                     FontSize="14">
                 take new
             </Button>
             <Button Grid.Row="5"
                     Grid.Column="1"
-                    MaxWidth="120"
+                    MaxHeight ="30"
+                 MaxWidth ="100"
+                 MinHeight="30"
+                 MinWidth="100"
                     FontSize="14">
                 create new
             </Button>

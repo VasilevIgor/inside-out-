@@ -5,10 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         mc:Ignorable="d"
-        Title="Creation_Window3"  Width="740"
-        Height="540"
+        Title="Creation_Window3" Height="540"
         MinHeight="515"
         MinWidth="500">
+    <Window.Resources>
+        <Style x:Key="MyTextStyle">
+            <Setter Property="Control.FontFamily" Value="Lucida"></Setter>
+            <Setter Property="Control.FontSize" Value="14"></Setter>
+            <Setter Property="Control.FontWeight" Value="Regular"></Setter>
+            <Setter Property="Control.Foreground" Value="Black"></Setter>
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.HorizontalAlignment" Value="Center"></Setter>
+        </Style>
+        <Style x:Key="MyButtonStyle">
+            <Setter Property="Control.FontFamily" Value="Lucida"></Setter>
+            <Setter Property="Control.FontSize" Value="14"></Setter>
+            <Setter Property="Control.FontWeight" Value="Regular"></Setter>
+            <Setter Property="Control.Foreground" Value="Black"></Setter>
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.MaxHeight" Value="30"></Setter>
+            <Setter Property="Control.MaxWidth" Value="100"></Setter>
+            <Setter Property="Control.MinHeight" Value="30"></Setter>
+            <Setter Property="Control.MinWidth" Value="100"></Setter>
+        </Style>
+    </Window.Resources>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Height="20"
@@ -59,22 +79,17 @@
                        Grid.RowSpan="2"
                        Grid.Column="0"
                        Grid.ColumnSpan="3"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       FontSize="14"
-                       Text="RANGE MANAGER"/>
+                       Text="RANGE MANAGER"
+                       Style="{StaticResource MyTextStyle}"/>
             <TextBlock Grid.Row="2"
                        Grid.Column="0"
                        Grid.ColumnSpan="2"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Text="selected test1">
-            </TextBlock>
+                       Text="selected test1"
+                       Style="{StaticResource MyTextStyle}"/>
             <TextBox Grid.Row="5" 
                      Grid.Column="0"
                      Grid.ColumnSpan="2"
                      TextAlignment="Left"
-                     FontSize="14"
                      Name="textBox2"
                      TextWrapping="Wrap" 
                      Margin="100 0"
@@ -106,25 +121,16 @@
             </TextBox>
             <TextBlock Grid.Row="4"
                        Grid.Column="0"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Width="100"
-                       FontSize="14"
                        Text="range top"
-                       TextAlignment="Center">
-            </TextBlock>
+                       TextAlignment="Center"
+                       Style="{StaticResource MyTextStyle}"/>
             <TextBlock Grid.Row="4"
                        Grid.Column="1"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       Width="100"
-                       FontSize="14"
                        Text="range bottom"
-                       TextAlignment="Center">
-            </TextBlock>
+                       TextAlignment="Center"
+                       Style="{StaticResource MyTextStyle}"/>
             <TextBox Grid.Row="4"
                      Grid.Column="0"
-                     FontSize="14"
                      Margin="10 10"
                      TextAlignment="Center"
                      VerticalAlignment="Center"
@@ -156,7 +162,6 @@
             </TextBox>
             <TextBox Grid.Row="4"
                      Grid.Column="1"
-                            FontSize="14"
                              Margin="10 10"
                              TextAlignment="Center"
                              VerticalAlignment="Center"
@@ -189,17 +194,16 @@
                     Grid.RowSpan="3"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    BorderBrush="Black"
-                    BorderThickness="1">
+                    BorderThickness="1"
+                    BorderBrush="Black">
             </Border>
             <Button 
                 Cursor="Hand" 
                 Grid.Row="8"
                 Grid.Column="0" 
-                Grid.ColumnSpan="2" 
-                MaxWidth="120" 
-                FontSize="14"
-                Content="Next">
+                Grid.ColumnSpan="2"
+                Content="Next"
+                Style="{StaticResource MyButtonStyle}">
             </Button>
         </Grid>
     </DockPanel>

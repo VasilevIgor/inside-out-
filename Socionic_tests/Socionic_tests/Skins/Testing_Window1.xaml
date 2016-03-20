@@ -60,8 +60,11 @@
         <Button Grid.Row="4"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
+                MaxHeight ="30"
+                MaxWidth ="100"
+                MinHeight="30"
                 MinWidth="100"
-                MaxWidth="130"
+                Cursor="Hand"
                 VerticalAlignment="Center"
                 Content="Next"
                 FontSize="14" />
