@@ -5,13 +5,13 @@
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="TestSelectionWindow"
-        Width="500"
-        Height="280"
-        MinWidth="400"
-        MinHeight="240"
+        Width="680"
+        Height="440"
+        MinWidth="560"
+        MinHeight="340"
+        mc:Ignorable="d"
         DataContext="{Binding SelectTest,
-                              Source={StaticResource Locator}}"
-        mc:Ignorable="d">
+                              Source={StaticResource Locator}}">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Height="20"
@@ -35,30 +35,44 @@
                           Header="Log out" />
                 <MenuItem Height="20"
                           FontSize="14"
-                          Header="About">
+                          Header="About"
+                          Cursor="Help">
                     <MenuItem Height="20"
                               FontSize="14"
-                              Header="read" />
+                              Header="Read" />
                 </MenuItem>
             </MenuItem>
         </Menu>
         <Grid Margin="20 20" VerticalAlignment="Center">
             <Grid.RowDefinitions>
-                <RowDefinition Height="120" />
-                <RowDefinition />
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="140" />
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <StackPanel Grid.Row="0"
+            <TextBlock Grid.Row="0"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
-                        VerticalAlignment="Center">
+                               Height="18"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Top"
+                               FontSize="14"
+                       Text="SELECT TEST">
+            </TextBlock>
+            <StackPanel Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        VerticalAlignment="Center"
+                        Margin="20 20">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30" />
                         <RowDefinition Height="30" />
+                        <RowDefinition Height="20"/>
                         <RowDefinition Height="30" />
                         <RowDefinition Height="30" />
                         <RowDefinition />
@@ -67,49 +81,47 @@
                         <ColumnDefinition Width="100" />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Row="0"
-                               Grid.Column="0"
-                               Grid.ColumnSpan="2"
-                               Height="18"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Top"
-                               FontSize="14">
-                        Select test
-                    </TextBlock>
                     <TextBlock Grid.Row="1"
                                Height="18"
                                Margin="7 0"
                                VerticalAlignment="Center"
-                               FontSize="14">
-                        Section
+                               FontSize="14"
+                               Text="Section">
                     </TextBlock>
                     <ComboBox Grid.Row="1"
                               Grid.Column="1"
                               Height="22"
                               VerticalAlignment="Center"
                               FontSize="14" />
-                    <TextBlock Grid.Row="2"
+                    <TextBlock Grid.Row="3"
                                Height="18"
                                Margin="7 0"
                                VerticalAlignment="Center"
-                               FontSize="14">
-                        Test
+                               FontSize="14"
+                               Text="Test">
                     </TextBlock>
-                    <ComboBox Grid.Row="2"
+                    <ComboBox Grid.Row="3"
                               Grid.Column="1"
                               Height="22"
                               VerticalAlignment="Center"
                               FontSize="14" />
                 </Grid>
             </StackPanel>
-            <Button Grid.Row="1"
+            <Border Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    BorderBrush="Black"
+                    BorderThickness="1">
+            </Border>
+            <Button Grid.Row="3"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     MinWidth="80"
                     MaxWidth="100"
-                    VerticalAlignment="Top"
-                    FontSize="14">
-                Begin
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    Content="Begin"
+                    Cursor="Hand">
             </Button>
         </Grid>
     </DockPanel>
