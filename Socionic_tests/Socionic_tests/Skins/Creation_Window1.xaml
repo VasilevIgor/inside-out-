@@ -9,9 +9,13 @@
         Height="480"
         MinWidth="620"
         MinHeight="420"
+        Icon="35rt.png"
         DataContext="{Binding TestCreationPartOne,
                               Source={StaticResource Locator}}"
         mc:Ignorable="d">
+    <Window.Background>
+        <ImageBrush ImageSource="pic1.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
     <Window.Resources>
         <Style x:Key="MyTextStyle">
             <Setter Property="Control.FontFamily" Value="Lucida" />
@@ -24,8 +28,9 @@
         <Style x:Key="MyButtonStyle">
             <Setter Property="Control.FontFamily" Value="Lucida" />
             <Setter Property="Control.FontSize" Value="14" />
-            <Setter Property="Control.FontWeight" Value="Regular" />
-            <Setter Property="Control.Foreground" Value="Black" />
+            <Setter Property="Control.FontWeight" Value="Bold" />
+            <Setter Property="Control.Foreground" Value="White" />
+            <Setter Property="Control.Background" Value="#E1C889"></Setter>
             <Setter Property="Control.VerticalAlignment" Value="Center" />
             <Setter Property="Control.MaxHeight" Value="30" />
             <Setter Property="Control.MaxWidth" Value="100" />
@@ -81,8 +86,16 @@
                        Grid.RowSpan="2"
                        Grid.Column="0"
                        Grid.ColumnSpan="2"
+                       Foreground="White"
+                       FontWeight="Bold"
                        Style="{StaticResource MyTextStyle}"
                        Text="CREATION MODE" />
+            <Border Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    BorderBrush="#E1C889"
+                    BorderThickness="1" 
+                    Background="White" />
             <StackPanel Grid.Row="2"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
@@ -151,11 +164,6 @@
                             VerticalAlignment="Center" />
                 </Grid>
             </StackPanel>
-            <Border Grid.Row="2"
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    BorderBrush="Black"
-                    BorderThickness="1" />
             <Button Grid.Row="4"
                     Command="{Binding ToTheMiddleCreationPage}"
                     Content="Next"

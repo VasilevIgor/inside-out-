@@ -10,7 +10,11 @@
         MinWidth="560"
         MinHeight="340"
         DataContext="{Binding SelectTest,
-                              Source={StaticResource Locator}}">
+                              Source={StaticResource Locator}}"
+        Icon="35rt.png">
+    <Window.Background>
+        <ImageBrush ImageSource="pic1.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
     <Window.Resources>
         <Style x:Key="MyTextStyle">
             <Setter Property="Control.FontFamily" Value="Lucida" />
@@ -65,10 +69,17 @@
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0"
                        Grid.Column="0"
+                       Foreground="White"
+                       FontWeight="Bold"
                        Grid.ColumnSpan="2"
                        VerticalAlignment="Top"
                        Style="{StaticResource MyTextStyle}"
                        Text="SELECT TEST" />
+            <Border Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    BorderBrush="#E1C889"
+                BorderThickness="1" Background="White" />
             <StackPanel Grid.Row="1"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
@@ -109,13 +120,10 @@
                               FontSize="14" />
                 </Grid>
             </StackPanel>
-            <Border Grid.Row="1"
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    BorderBrush="Black"
-                    BorderThickness="1" />
             <Button Grid.Row="3"
                     Grid.Column="0"
+                    Foreground="White"
+                    Background="#E1C889"
                     Grid.ColumnSpan="2"
                     MinWidth="100"
                     MinHeight="30"

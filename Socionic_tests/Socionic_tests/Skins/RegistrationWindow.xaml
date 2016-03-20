@@ -11,7 +11,10 @@
         MinHeight="380"
         DataContext="{Binding RegisterProfile,
                               Source={StaticResource Locator}}"
-        mc:Ignorable="d">
+        mc:Ignorable="d" Icon="35rt.png">
+    <Window.Background>
+        <ImageBrush ImageSource="pic1.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
     <Grid Margin="20 20" VerticalAlignment="Center">
         <Grid.RowDefinitions>
             <RowDefinition Height="220" />
@@ -22,6 +25,11 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
+        <Border Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BorderBrush="#E1C889"
+                BorderThickness="1" Background="White" />
         <StackPanel Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
@@ -42,6 +50,7 @@
                     <ColumnDefinition Width="150" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
+
                 <TextBlock Grid.Row="1"
                            Height="18"
                            Margin="7 0"
@@ -105,14 +114,11 @@
                              FontSize="14" />
             </Grid>
         </StackPanel>
-        <Border Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                BorderBrush="Black"
-                BorderThickness="1" />
         <Button Grid.Row="2"
                 MaxHeight ="30"
                  MaxWidth ="100"
+                Foreground="White"
+                Background="#E1C889"
                  MinHeight="30"
                  MinWidth="100"
                 Cursor="Hand"
@@ -123,6 +129,8 @@
                 Grid.Column="1"
                 MaxHeight ="30"
                  MaxWidth ="100"
+                Foreground="White"
+                Background="#E1C889"
                  MinHeight="30"
                  MinWidth="100"
                 Cursor="Hand"

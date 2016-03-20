@@ -9,8 +9,11 @@
         Height="680"
         MinWidth="1000"
         MinHeight="640"
-        DataContext="{Binding TestCreationPartTwo ,Source={StaticResource Locator}}">
-    <DockPanel>
+        DataContext="{Binding TestCreationPartTwo ,Source={StaticResource Locator}}"
+        Icon="35rt.png">
+    <Window.Background>
+        <ImageBrush ImageSource="pic1.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background> <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Height="20"
                       FontSize="14"
@@ -62,10 +65,14 @@
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        FontSize="14"
+                       Foreground="White"
+                       FontWeight="Bold"
                        Text="CREATION MODE">
             </TextBlock>
             <TextBlock Grid.Row="1"
                        Grid.Column="1"
+                        Foreground="White"
+                       FontWeight="Bold"
                        Grid.ColumnSpan="2"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
@@ -74,6 +81,8 @@
             </TextBlock>
             <TextBlock Grid.Row="1"
                        Grid.Column="0"
+                        Foreground="White"
+                       FontWeight="Bold"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        FontSize="14"
@@ -234,7 +243,6 @@
                         Grid.Column="0" 
                         Grid.ColumnSpan="2" 
                         VerticalAlignment="Center"
-                        Margin="40 0"
                         Padding="5"
                         TextAlignment="Center" 
                         Text="question1?"
@@ -541,6 +549,8 @@
             </StackPanel>
             <Button 
                 Cursor="Hand" 
+                 Foreground="White"
+                Background="#E1C889"
                 Grid.Row="5"
                 Grid.Column="1" 
                 Grid.ColumnSpan="2" 

@@ -11,7 +11,11 @@
         MinHeight="430"
         DataContext="{Binding Reccomendation,
                               Source={StaticResource Locator}}"
-        mc:Ignorable="d">
+        mc:Ignorable="d"
+        Icon="35rt.png">
+    <Window.Background>
+        <ImageBrush ImageSource="pic1.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
     <Grid Margin="20 20">
         <Grid.RowDefinitions>
             <RowDefinition Height="30" />
@@ -26,8 +30,15 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
+        <Border Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+               BorderBrush="#E1C889"
+                BorderThickness="1" Background="White" />
         <TextBlock Grid.Row="1"
                    Grid.RowSpan="2"
+                   Foreground="White"
+                   FontWeight="Bold"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    HorizontalAlignment="Center"
@@ -42,13 +53,10 @@
                    FontSize="14"
                    Text="recommendation1"
                    TextAlignment="Center" />
-        <Border Grid.Row="3"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                BorderBrush="Black"
-                BorderThickness="1" />
         <Button Grid.Row="5"
                 Grid.Column="0"
+                Foreground="White"
+                   Background="#E1C889"
                 Grid.ColumnSpan="2"
                 MinWidth="100"
                 MinHeight="30"

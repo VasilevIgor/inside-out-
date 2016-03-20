@@ -10,8 +10,10 @@
         MinHeight="515"
         DataContext="{Binding TestCreationPart_3,
                               Source={StaticResource Locator}}"
-        mc:Ignorable="d">
-    <Window.Resources>
+        mc:Ignorable="d" Icon="35rt.png">
+    <Window.Background>
+        <ImageBrush ImageSource="pic1.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background> <Window.Resources>
         <Style x:Key="MyTextStyle">
             <Setter Property="Control.FontFamily" Value="Lucida" />
             <Setter Property="Control.FontSize" Value="14" />
@@ -79,15 +81,25 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
+            <Border Grid.Row="4"
+                    Grid.RowSpan="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    BorderBrush="#E1C889"
+                BorderThickness="1" Background="White" />
             <TextBlock Grid.Row="0"
                        Grid.RowSpan="2"
                        Grid.Column="0"
+                       Foreground="White"
+                       FontWeight="Bold"
                        Grid.ColumnSpan="3"
                        Style="{StaticResource MyTextStyle}"
                        Text="RANGE MANAGER" />
             <TextBlock Grid.Row="2"
                        Grid.Column="0"
                        Grid.ColumnSpan="2"
+                       Foreground="White"
+                       FontWeight="Bold"
                        Style="{StaticResource MyTextStyle}"
                        Text="selected test1" />
             <TextBlock Grid.Row="4"
@@ -131,12 +143,7 @@
                     </Style>
                 </TextBox.Style>
             </TextBox>
-            <Border Grid.Row="4"
-                    Grid.RowSpan="3"
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    BorderBrush="Black"
-                    BorderThickness="1" />
+           
             <TextBlock Grid.Row="4"
                        Grid.Column="1"
                        Style="{StaticResource MyTextStyle}"
@@ -218,6 +225,8 @@
             <Button Grid.Row="8"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
+                     Foreground="White"
+                Background="#E1C889"
                     Command="{Binding ToLastCreationPage}"
                     Content="Next"
                     Cursor="Hand"
