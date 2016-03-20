@@ -85,7 +85,8 @@
                 Grid.ColumnSpan="2"
                 BorderBrush="Black"
                 BorderThickness="1" />
-        <Button Grid.Row="3"
+        <Button Name="signIn"
+                Grid.Row="3"
                 Grid.RowSpan="2"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
@@ -96,13 +97,15 @@
                 FontSize="14">
             sign in
         </Button>
-        <Button Grid.Row="6"
+        <Button Name="CreateAccount"
+                Grid.Row="6"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 MinWidth="120"
                 MaxWidth="140"
                 VerticalAlignment="Center"
-                Command="{Binding SignUp}"
+                Command="{Binding SignUp,
+                                  Mode=OneWay}"
                 FontSize="14">
             create account
         </Button>

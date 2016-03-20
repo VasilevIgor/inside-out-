@@ -15,9 +15,9 @@ namespace Socionic_tests.ViewModel
     {
         public UserDataItem User { get; set; }
         public ICommand LogInCommand { get; private set; }
+       // private INavigationService _navigationService = new NavigationService();
         public MainViewModel()
         {
-           
             SignUp = new RelayCommand(Sign_Up);
             LogVK = new RelayCommand(Log_VK);
           LogInCommand = new RelayCommand(this.OnLogInCommand);
@@ -31,7 +31,7 @@ namespace Socionic_tests.ViewModel
 
         private void Sign_Up()
         {
-            
+    //        _navigationService.NavigateTo("registration");
         }
         public RelayCommand SignUp { get; set; }
         public RelayCommand LogVK { get; set; }
@@ -40,6 +40,7 @@ namespace Socionic_tests.ViewModel
         {
               string testUsername = Username;
               string testPassword = Password;
+      //        _navigationService.NavigateTo("registration");
         }
 
     #region Properties

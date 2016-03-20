@@ -45,6 +45,7 @@ namespace Socionic_tests.ViewModel
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance",
             "CA1822:MarkMembersAsStatic",
             Justification = "This non-static member is needed for data binding purposes.")]
+      //  ServiceLocator.Current.GetInstance<MainViewModel>();
         public MainViewModel Main
         {
             get
