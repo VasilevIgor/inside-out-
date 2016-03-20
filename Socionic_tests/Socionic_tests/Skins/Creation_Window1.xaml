@@ -14,24 +14,24 @@
         mc:Ignorable="d">
     <Window.Resources>
         <Style x:Key="MyTextStyle">
-            <Setter Property="Control.FontFamily" Value="Lucida"></Setter>
-            <Setter Property="Control.FontSize" Value="14"></Setter>
-            <Setter Property="Control.FontWeight" Value="Regular"></Setter>
-            <Setter Property="Control.Foreground" Value="Black"></Setter>
-            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
-            <Setter Property="Control.HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.FontFamily" Value="Lucida" />
+            <Setter Property="Control.FontSize" Value="14" />
+            <Setter Property="Control.FontWeight" Value="Regular" />
+            <Setter Property="Control.Foreground" Value="Black" />
+            <Setter Property="Control.VerticalAlignment" Value="Center" />
+            <Setter Property="Control.HorizontalAlignment" Value="Center" />
         </Style>
         <Style x:Key="MyButtonStyle">
-            <Setter Property="Control.FontFamily" Value="Lucida"></Setter>
-            <Setter Property="Control.FontSize" Value="14"></Setter>
-            <Setter Property="Control.FontWeight" Value="Regular"></Setter>
-            <Setter Property="Control.Foreground" Value="Black"></Setter>
-            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
-            <Setter Property="Control.MaxHeight" Value="30"></Setter>
-            <Setter Property="Control.MaxWidth" Value="100"></Setter>
-            <Setter Property="Control.MinHeight" Value="30"></Setter>
-            <Setter Property="Control.MinWidth" Value="100"></Setter>
-            <Setter Property="Control.Cursor" Value="Hand"></Setter>
+            <Setter Property="Control.FontFamily" Value="Lucida" />
+            <Setter Property="Control.FontSize" Value="14" />
+            <Setter Property="Control.FontWeight" Value="Regular" />
+            <Setter Property="Control.Foreground" Value="Black" />
+            <Setter Property="Control.VerticalAlignment" Value="Center" />
+            <Setter Property="Control.MaxHeight" Value="30" />
+            <Setter Property="Control.MaxWidth" Value="100" />
+            <Setter Property="Control.MinHeight" Value="30" />
+            <Setter Property="Control.MinWidth" Value="100" />
+            <Setter Property="Control.Cursor" Value="Hand" />
         </Style>
     </Window.Resources>
     <DockPanel>
@@ -67,7 +67,7 @@
         </Menu>
         <Grid Margin="20 20" VerticalAlignment="Center">
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
+                <RowDefinition Height="30" />
                 <RowDefinition Height="30" />
                 <RowDefinition Height="230" />
                 <RowDefinition Height="30" />
@@ -81,8 +81,8 @@
                        Grid.RowSpan="2"
                        Grid.Column="0"
                        Grid.ColumnSpan="2"
-                       Text="CREATION MODE"
-                       Style="{StaticResource MyTextStyle}"/>
+                       Style="{StaticResource MyTextStyle}"
+                       Text="CREATION MODE" />
             <StackPanel Grid.Row="2"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
@@ -102,9 +102,9 @@
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Row="1"
                                Margin="7 0"
-                               Text="Section name"
+                               HorizontalAlignment="Left"
                                Style="{StaticResource MyTextStyle}"
-                               HorizontalAlignment="Left"/>
+                               Text="Section name" />
                     <ComboBox Grid.Row="1"
                               Grid.Column="1"
                               Height="22"
@@ -112,8 +112,8 @@
                               FontSize="14" />
                     <TextBlock Grid.Row="2"
                                Margin="7 0"
-                               Style="{StaticResource MyTextStyle}"
                                HorizontalAlignment="Left"
+                               Style="{StaticResource MyTextStyle}"
                                Text="Test name" />
                     <TextBox Grid.Row="2"
                              Grid.Column="1"
@@ -127,24 +127,24 @@
                              FontSize="14" />
                     <TextBlock Grid.Row="3"
                                Margin="7 0"
-                               Style="{StaticResource MyTextStyle}"
                                HorizontalAlignment="Left"
+                               Style="{StaticResource MyTextStyle}"
                                Text="Number of questions" />
                     <Slider Grid.Row="3"
                             Grid.Column="1"
                             VerticalAlignment="Center" />
                     <TextBlock Grid.Row="4"
                                Margin="7 0"
-                               Style="{StaticResource MyTextStyle}"
                                HorizontalAlignment="Left"
+                               Style="{StaticResource MyTextStyle}"
                                Text="Number of answers for each question" />
                     <Slider Grid.Row="4"
                             Grid.Column="1"
                             VerticalAlignment="Center" />
                     <TextBlock Grid.Row="7"
                                Margin="7 0"
-                               Style="{StaticResource MyTextStyle}"
                                HorizontalAlignment="Left"
+                               Style="{StaticResource MyTextStyle}"
                                Text="Number of recommendations" />
                     <Slider Grid.Row="7"
                             Grid.Column="1"
@@ -157,12 +157,13 @@
                     BorderBrush="Black"
                     BorderThickness="1" />
             <Button Grid.Row="4"
-                    Style="{StaticResource MyButtonStyle}"
-                    Content="Next"/>
+                    Command="{Binding ToTheMiddleCreationPage}"
+                    Content="Next"
+                    Style="{StaticResource MyButtonStyle}" />
             <Button Grid.Row="4"
                     Grid.Column="1"
-                    Style="{StaticResource MyButtonStyle}"
-                    Content="Cancel"/>
+                    Content="Cancel"
+                    Style="{StaticResource MyButtonStyle}" />
         </Grid>
     </DockPanel>
 </Window>

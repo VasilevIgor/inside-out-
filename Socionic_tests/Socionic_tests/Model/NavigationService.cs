@@ -30,6 +30,7 @@ namespace Socionic_tests.Model
             _windows["reccomendation"] = new RecommendationWindow();
             _windows["creationWin_1"] = new Creation_Window1();
             _windows["creationWin_2"] = new Creation_Window2();
+            _windows["creationWin_3"] = new Creation_Window3();
         }
     }
 }
