@@ -9,9 +9,9 @@
         Height="440"
         MinWidth="560"
         MinHeight="340"
-        mc:Ignorable="d"
         DataContext="{Binding SelectTest,
-                              Source={StaticResource Locator}}">
+                              Source={StaticResource Locator}}"
+        mc:Ignorable="d">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Height="20"
@@ -34,9 +34,9 @@
                           FontSize="14"
                           Header="Log out" />
                 <MenuItem Height="20"
+                          Cursor="Help"
                           FontSize="14"
-                          Header="About"
-                          Cursor="Help">
+                          Header="About">
                     <MenuItem Height="20"
                               FontSize="14"
                               Header="Read" />
@@ -45,9 +45,9 @@
         </Menu>
         <Grid Margin="20 20" VerticalAlignment="Center">
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
+                <RowDefinition Height="30" />
                 <RowDefinition Height="140" />
-                <RowDefinition Height="30"/>
+                <RowDefinition Height="30" />
                 <RowDefinition Height="30" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -55,24 +55,23 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2"
-                               Height="18"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Top"
-                               FontSize="14"
-                       Text="SELECT TEST">
-            </TextBlock>
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       Height="18"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontSize="14"
+                       Text="SELECT TEST" />
             <StackPanel Grid.Row="1"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
-                        VerticalAlignment="Center"
-                        Margin="20 20">
+                        Margin="20 20"
+                        VerticalAlignment="Center">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30" />
                         <RowDefinition Height="30" />
-                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20" />
                         <RowDefinition Height="30" />
                         <RowDefinition Height="30" />
                         <RowDefinition />
@@ -86,8 +85,7 @@
                                Margin="7 0"
                                VerticalAlignment="Center"
                                FontSize="14"
-                               Text="Section">
-                    </TextBlock>
+                               Text="Section" />
                     <ComboBox Grid.Row="1"
                               Grid.Column="1"
                               Height="22"
@@ -98,8 +96,7 @@
                                Margin="7 0"
                                VerticalAlignment="Center"
                                FontSize="14"
-                               Text="Test">
-                    </TextBlock>
+                               Text="Test" />
                     <ComboBox Grid.Row="3"
                               Grid.Column="1"
                               Height="22"
@@ -111,18 +108,16 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     BorderBrush="Black"
-                    BorderThickness="1">
-            </Border>
+                    BorderThickness="1" />
             <Button Grid.Row="3"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     MinWidth="80"
                     MaxWidth="100"
                     VerticalAlignment="Center"
-                    FontSize="14"
                     Content="Begin"
-                    Cursor="Hand">
-            </Button>
+                    Cursor="Hand"
+                    FontSize="14" />
         </Grid>
     </DockPanel>
 </Window>

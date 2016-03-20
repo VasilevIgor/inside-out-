@@ -126,12 +126,14 @@
             </ListBox>
             <Button Grid.Row="5"
                     MaxWidth="120"
+                    Command="{Binding TakeNewTest}"
                     FontSize="14">
                 take new
             </Button>
             <Button Grid.Row="5"
                     Grid.Column="1"
                     MaxWidth="120"
+                    Command="{Binding CreateTest}"
                     FontSize="14">
                 create new
             </Button>

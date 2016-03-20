@@ -32,7 +32,9 @@ namespace Socionic_tests.ViewModel
 
         private void Sign_Up()
         {
-            _lockator.NavigationService.NavigateTo("profile");
+            _lockator.NavigationService.NavigateTo("reg");
+         
+            App.Current.MainWindow.Close();
         }
         public RelayCommand SignUp { get; set; }
         public RelayCommand LogVK { get; set; }
@@ -41,7 +43,8 @@ namespace Socionic_tests.ViewModel
         {
            //   string testUsername = Username;
             //  string testPassword = Password;
-              _lockator.NavigationService.NavigateTo("reg");
+            _lockator.NavigationService.NavigateTo("profile");
+            App.Current.MainWindow.Close();
         }
 
     #region Properties
