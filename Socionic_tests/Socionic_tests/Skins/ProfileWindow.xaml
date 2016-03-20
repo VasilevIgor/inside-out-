@@ -72,25 +72,25 @@
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    MaxWidth="120"
+                    MinWidth="100"
+                    MinHeight="30"
+                    MaxWidth="100"
+                    MaxHeight="30"
+                    Content="upload image"
                     Cursor="Hand"
-                    FontSize="14">
-                upload image
-            </Button>
+                    FontSize="14" />
             <TextBlock Grid.Row="3"
                        Grid.Column="0"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Top"
-                       FontSize="14">
-                Passed tests
-            </TextBlock>
+                       FontSize="14"
+                       Text="Passed tests" />
             <TextBlock Grid.Row="3"
                        Grid.Column="1"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Top"
-                       FontSize="14">
-                Created tests
-            </TextBlock>
+                       FontSize="14"
+                       Text="Created tests" />
             <ListBox Grid.Row="4"
                      Grid.Column="0"
                      Margin="100 10 100 10"

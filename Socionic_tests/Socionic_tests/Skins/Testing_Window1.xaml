@@ -61,9 +61,12 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 MinWidth="100"
-                MaxWidth="130"
+                MinHeight="30"
+                MaxWidth="100"
+                MaxHeight="30"
                 VerticalAlignment="Center"
                 Content="Next"
+                Cursor="Hand"
                 FontSize="14" />
     </Grid>
 </Window>

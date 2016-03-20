@@ -10,8 +10,17 @@
         MinWidth="560"
         MinHeight="340"
         DataContext="{Binding SelectTest,
-                              Source={StaticResource Locator}}"
-        mc:Ignorable="d">
+                              Source={StaticResource Locator}}">
+    <Window.Resources>
+        <Style x:Key="MyTextStyle">
+            <Setter Property="Control.FontFamily" Value="Lucida" />
+            <Setter Property="Control.FontSize" Value="14" />
+            <Setter Property="Control.FontWeight" Value="Regular" />
+            <Setter Property="Control.Foreground" Value="Black" />
+            <Setter Property="Control.VerticalAlignment" Value="Center" />
+            <Setter Property="Control.HorizontalAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Height="20"
@@ -57,10 +66,8 @@
             <TextBlock Grid.Row="0"
                        Grid.Column="0"
                        Grid.ColumnSpan="2"
-                       Height="18"
-                       HorizontalAlignment="Center"
                        VerticalAlignment="Top"
-                       FontSize="14"
+                       Style="{StaticResource MyTextStyle}"
                        Text="SELECT TEST" />
             <StackPanel Grid.Row="1"
                         Grid.Column="0"
@@ -81,10 +88,9 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Row="1"
-                               Height="18"
                                Margin="7 0"
-                               VerticalAlignment="Center"
-                               FontSize="14"
+                               HorizontalAlignment="Left"
+                               Style="{StaticResource MyTextStyle}"
                                Text="Section" />
                     <ComboBox Grid.Row="1"
                               Grid.Column="1"
@@ -92,10 +98,9 @@
                               VerticalAlignment="Center"
                               FontSize="14" />
                     <TextBlock Grid.Row="3"
-                               Height="18"
                                Margin="7 0"
-                               VerticalAlignment="Center"
-                               FontSize="14"
+                               HorizontalAlignment="Left"
+                               Style="{StaticResource MyTextStyle}"
                                Text="Test" />
                     <ComboBox Grid.Row="3"
                               Grid.Column="1"
@@ -112,8 +117,10 @@
             <Button Grid.Row="3"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    MinWidth="80"
+                    MinWidth="100"
+                    MinHeight="30"
                     MaxWidth="100"
+                    MaxHeight="30"
                     VerticalAlignment="Center"
                     Content="Begin"
                     Cursor="Hand"

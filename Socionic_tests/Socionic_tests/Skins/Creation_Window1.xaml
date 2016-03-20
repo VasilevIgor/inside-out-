@@ -5,13 +5,35 @@
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="Creation_Window1"
-        Width="720"
-        Height="440"
+        Width="740"
+        Height="480"
         MinWidth="620"
         MinHeight="420"
         DataContext="{Binding TestCreationPartOne,
                               Source={StaticResource Locator}}"
         mc:Ignorable="d">
+    <Window.Resources>
+        <Style x:Key="MyTextStyle">
+            <Setter Property="Control.FontFamily" Value="Lucida"></Setter>
+            <Setter Property="Control.FontSize" Value="14"></Setter>
+            <Setter Property="Control.FontWeight" Value="Regular"></Setter>
+            <Setter Property="Control.Foreground" Value="Black"></Setter>
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.HorizontalAlignment" Value="Center"></Setter>
+        </Style>
+        <Style x:Key="MyButtonStyle">
+            <Setter Property="Control.FontFamily" Value="Lucida"></Setter>
+            <Setter Property="Control.FontSize" Value="14"></Setter>
+            <Setter Property="Control.FontWeight" Value="Regular"></Setter>
+            <Setter Property="Control.Foreground" Value="Black"></Setter>
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.MaxHeight" Value="30"></Setter>
+            <Setter Property="Control.MaxWidth" Value="100"></Setter>
+            <Setter Property="Control.MinHeight" Value="30"></Setter>
+            <Setter Property="Control.MinWidth" Value="100"></Setter>
+            <Setter Property="Control.Cursor" Value="Hand"></Setter>
+        </Style>
+    </Window.Resources>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Height="20"
@@ -45,6 +67,7 @@
         </Menu>
         <Grid Margin="20 20" VerticalAlignment="Center">
             <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
                 <RowDefinition Height="30" />
                 <RowDefinition Height="230" />
                 <RowDefinition Height="30" />
@@ -55,13 +78,12 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0"
+                       Grid.RowSpan="2"
                        Grid.Column="0"
                        Grid.ColumnSpan="2"
-                       HorizontalAlignment="Center"
-                       FontSize="14"
                        Text="CREATION MODE"
-                       TextAlignment="Center" />
-            <StackPanel Grid.Row="1"
+                       Style="{StaticResource MyTextStyle}"/>
+            <StackPanel Grid.Row="2"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
                         Margin="20 20">
@@ -79,21 +101,19 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Row="1"
-                               Height="18"
                                Margin="7 0"
-                               VerticalAlignment="Center"
-                               FontSize="14"
-                               Text="Section name" />
+                               Text="Section name"
+                               Style="{StaticResource MyTextStyle}"
+                               HorizontalAlignment="Left"/>
                     <ComboBox Grid.Row="1"
                               Grid.Column="1"
                               Height="22"
                               VerticalAlignment="Center"
                               FontSize="14" />
                     <TextBlock Grid.Row="2"
-                               Height="18"
                                Margin="7 0"
-                               VerticalAlignment="Center"
-                               FontSize="14"
+                               Style="{StaticResource MyTextStyle}"
+                               HorizontalAlignment="Left"
                                Text="Test name" />
                     <TextBox Grid.Row="2"
                              Grid.Column="1"
@@ -106,52 +126,43 @@
                              VerticalAlignment="Center"
                              FontSize="14" />
                     <TextBlock Grid.Row="3"
-                               Height="18"
                                Margin="7 0"
-                               VerticalAlignment="Center"
-                               FontSize="14"
+                               Style="{StaticResource MyTextStyle}"
+                               HorizontalAlignment="Left"
                                Text="Number of questions" />
                     <Slider Grid.Row="3"
                             Grid.Column="1"
                             VerticalAlignment="Center" />
                     <TextBlock Grid.Row="4"
-                               Height="18"
                                Margin="7 0"
-                               VerticalAlignment="Center"
-                               FontSize="14"
+                               Style="{StaticResource MyTextStyle}"
+                               HorizontalAlignment="Left"
                                Text="Number of answers for each question" />
                     <Slider Grid.Row="4"
                             Grid.Column="1"
                             VerticalAlignment="Center" />
                     <TextBlock Grid.Row="7"
-                               Height="18"
                                Margin="7 0"
-                               VerticalAlignment="Center"
-                               FontSize="14"
+                               Style="{StaticResource MyTextStyle}"
+                               HorizontalAlignment="Left"
                                Text="Number of recommendations" />
                     <Slider Grid.Row="7"
                             Grid.Column="1"
                             VerticalAlignment="Center" />
                 </Grid>
             </StackPanel>
-            <Border Grid.Row="1"
+            <Border Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     BorderBrush="Black"
                     BorderThickness="1" />
-            <Button Grid.Row="3"
-                    MinWidth="80"
-                    MaxWidth="100"
-                    VerticalAlignment="Center"
-                    Content="Next"
-                    FontSize="14" />
-            <Button Grid.Row="3"
+            <Button Grid.Row="4"
+                    Style="{StaticResource MyButtonStyle}"
+                    Content="Next"/>
+            <Button Grid.Row="4"
                     Grid.Column="1"
-                    MinWidth="80"
-                    MaxWidth="100"
-                    VerticalAlignment="Center"
-                    Content="Cancel"
-                    FontSize="14" />
+                    Style="{StaticResource MyButtonStyle}"
+                    Content="Cancel"/>
         </Grid>
     </DockPanel>
 </Window>

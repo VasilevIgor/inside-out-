@@ -51,10 +51,14 @@
         <Button  Grid.Row="5" 
                  Grid.Column="0" 
                  Grid.ColumnSpan="2" 
-                 VerticalAlignment="Center" 
-                 MaxWidth="100" 
+                 VerticalAlignment="Center"
                  FontSize="14"
-                 Content="again">
+                 Cursor="Hand"
+                 Content="Again"
+                 MaxHeight ="30"
+                 MaxWidth ="100"
+                 MinHeight="30"
+                 MinWidth="100">
         </Button>
     </Grid>
 </Window>
