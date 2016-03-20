@@ -40,7 +40,7 @@ namespace Socionic_tests.ViewModel
         {
               string testUsername = Username;
               string testPassword = Password;
-      //        _navigationService.NavigateTo("registration");
+      // _navigationService.NavigateTo("registration");
         }
 
     #region Properties

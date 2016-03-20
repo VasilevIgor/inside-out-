@@ -23,5 +23,7 @@ namespace Socionic_tests.Skins
         {
             InitializeComponent();
         }
+
+
     }
 }

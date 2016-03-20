@@ -5,13 +5,10 @@
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="Creation_Window2"
-        Width="1200"
-        Height="720"
+         Width="1200"
+        Height="680"
         MinWidth="1000"
-        MinHeight="700"
-        DataContext="{Binding TestCreationPartTwo,
-                              Source={StaticResource Locator}}"
-        mc:Ignorable="d">
+        MinHeight="640">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Height="20"
@@ -33,8 +30,7 @@
                 <MenuItem Height="20"
                           FontSize="14"
                           Header="Log out" />
-                <MenuItem Height="20"
-                          Cursor="Help"
+                <MenuItem Cursor="Help" Height="20"
                           FontSize="14"
                           Header="About">
                     <MenuItem Height="20"
@@ -45,457 +41,511 @@
         </Menu>
         <Grid Margin="20 20">
             <Grid.RowDefinitions>
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="400" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="400"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0"
                        Grid.Column="0"
                        Grid.ColumnSpan="3"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       FontSize="14">
-                Creation mode
-            </TextBlock>
-            <TextBlock Grid.Row="1"
-                       Grid.Column="0"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       FontSize="14">
-                Select question to edit
+                       FontSize="14"
+                       Text="CREATION MODE">
             </TextBlock>
             <TextBlock Grid.Row="1"
                        Grid.Column="1"
                        Grid.ColumnSpan="2"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
-                       FontSize="14">
-                Question editor
+                       FontSize="14"
+                       Text="Question editor">
             </TextBlock>
-            <TreeView Grid.Row="3"
+            <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="14"
+                       Text="Select question to edit">
+            </TextBlock>
+            <TreeView Cursor="Hand" 
+                      Grid.Row="3" 
                       Grid.RowSpan="3"
                       Grid.Column="0"
-                      HorizontalAlignment="Left"
-                      VerticalAlignment="Top"
-                      Cursor="Hand"
-                      FontSize="14">
-                <TreeViewItem Margin="10 10" Header="sections">
+                      FontSize="14"
+                      VerticalAlignment="Top">
+                <TreeViewItem 
+                    Header="sections" 
+                    Margin="10 10">
                     <TreeViewItem Header="section1">
                         <TreeViewItem Header="test1">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test2">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test3">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test4">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                     </TreeViewItem>
                     <TreeViewItem Header="section2">
                         <TreeViewItem Header="test1">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test2">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test3">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test4">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                     </TreeViewItem>
                     <TreeViewItem Header="section3">
                         <TreeViewItem Header="test1">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test2">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test3">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test4">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                     </TreeViewItem>
                     <TreeViewItem Header="section4">
                         <TreeViewItem Header="test1">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test2">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test3">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                         <TreeViewItem Header="test4">
-                            <TreeViewItem Header="question1" />
-                            <TreeViewItem Header="question2" />
-                            <TreeViewItem Header="question3" />
-                            <TreeViewItem Header="question4" />
+                            <TreeViewItem Header="question1"></TreeViewItem>
+                            <TreeViewItem Header="question2"></TreeViewItem>
+                            <TreeViewItem Header="question3"></TreeViewItem>
+                            <TreeViewItem Header="question4"></TreeViewItem>
                         </TreeViewItem>
                     </TreeViewItem>
                 </TreeViewItem>
             </TreeView>
-            <StackPanel Grid.Row="3"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="2"
-                        MaxWidth="600">
+            <StackPanel 
+                Grid.Row="3" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="2" 
+                MaxWidth="600">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="50" />
-                        <RowDefinition Height="50" />
-                        <RowDefinition Height="50" />
-                        <RowDefinition Height="50" />
-                        <RowDefinition Height="50" />
-                        <RowDefinition Height="50" />
-                        <RowDefinition Height="50" />
-                        <RowDefinition Height="50" />
-                        <RowDefinition />
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="540" />
-                        <ColumnDefinition />
+                        <ColumnDefinition Width="540"/>
+                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Name="userInput1"
-                             Grid.Row="0"
-                             Grid.Column="0"
-                             Grid.ColumnSpan="2"
-                             HorizontalAlignment="Center"
-                             VerticalAlignment="Top"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput1_LostFocus"
-                             TextAlignment="Center" />
-                    <TextBox Name="watermarkedTxt1"
-                             Grid.Row="0"
-                             Grid.Column="0"
-                             Grid.ColumnSpan="2"
-                             HorizontalAlignment="Center"
-                             VerticalAlignment="Top"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt1_GotFocus"
-                             Text="question1?"
-                             TextAlignment="Center" />
-                    <TextBox Name="userInput2"
-                             Grid.Row="1"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput2_LostFocus" />
-                    <TextBox Name="watermarkedTxt2"
-                             Grid.Row="1"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt2_GotFocus"
-                             Text="answer1" />
-                    <TextBox Name="userInput3"
-                             Grid.Row="1"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput3_LostFocus"
-                             MaxLength="3"
-                             TextAlignment="Center" />
-                    <TextBox Name="watermarkedTxt3"
-                             Grid.Row="1"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt3_GotFocus"
-                             MaxLength="3"
-                             Text="x"
-                             TextAlignment="Center" />
-                    <TextBox Name="userInput4"
-                             Grid.Row="2"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput4_LostFocus" />
-                    <TextBox Name="watermarkedTxt4"
-                             Grid.Row="2"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt4_GotFocus"
-                             Text="answer2" />
-                    <TextBox Name="userInput5"
-                             Grid.Row="2"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput5_LostFocus"
-                             MaxLength="3"
-                             TextAlignment="Center" />
-                    <TextBox Name="watermarkedtxt5"
-                             Grid.Row="2"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedtxt5_GotFocus"
-                             MaxLength="3"
-                             Text="x"
-                             TextAlignment="Center" />
-                    <TextBox Name="userInput6"
-                             Grid.Row="3"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput6_LostFocus" />
-                    <TextBox Name="watermarkedTxt6"
-                             Grid.Row="3"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt6_GotFocus"
-                             Text="answer3" />
-                    <TextBox Name="userInput7"
-                             Grid.Row="3"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput7_LostFocus"
-                             MaxLength="3"
-                             TextAlignment="Center" />
-                    <TextBox Name="watermarkedTxt7"
-                             Grid.Row="3"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt7_GotFocus"
-                             MaxLength="3"
-                             Text="x"
-                             TextAlignment="Center" />
-                    <TextBox Name="userInput8"
-                             Grid.Row="4"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput8_LostFocus" />
-                    <TextBox Name="watermarkedTxt8"
-                             Grid.Row="4"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt8_GotFocus"
-                             Text="answer4" />
-                    <TextBox Name="userInput9"
-                             Grid.Row="4"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput9_LostFocus"
-                             MaxLength="3"
-                             TextAlignment="Center" />
-                    <TextBox Name="watermarkedTxt9"
-                             Grid.Row="4"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt9_GotFocus"
-                             MaxLength="3"
-                             Text="x"
-                             TextAlignment="Center" />
-                    <TextBox Name="userInput10"
-                             Grid.Row="5"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput10_LostFocus" />
-                    <TextBox Name="watermarkedtxt10"
-                             Grid.Row="5"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedtxt10_GotFocus"
-                             Text="answer5" />
-                    <TextBox Name="userInput11"
-                             Grid.Row="5"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput11_LostFocus"
-                             MaxLength="3"
-                             TextAlignment="Center" />
-                    <TextBox Name="watermarkedTxt11"
-                             Grid.Row="5"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt11_GotFocus"
-                             MaxLength="3"
-                             Text="x"
-                             TextAlignment="Center" />
-                    <TextBox Name="userInput12"
-                             Grid.Row="6"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput12_LostFocus" />
-                    <TextBox Name="watermarkedTxt12"
-                             Grid.Row="6"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt12_GotFocus"
-                             Text="answer6" />
-                    <TextBox Name="userInput13"
-                             Grid.Row="6"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput13_LostFocus"
-                             MaxLength="3"
-                             TextAlignment="Center" />
-                    <TextBox Name="watermarkedTxt13"
-                             Grid.Row="6"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt13_GotFocus"
-                             MaxLength="3"
-                             Text="x"
-                             TextAlignment="Center" />
-                    <TextBox Name="userInput14"
-                             Grid.Row="7"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput14_LostFocus" />
-                    <TextBox Name="watermarkedtxt14"
-                             Grid.Row="7"
-                             Grid.Column="0"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedtxt14_GotFocus"
-                             Text="answer7" />
-                    <TextBox Name="userInput15"
-                             Grid.Row="7"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             LostFocus="userInput15_LostFocus"
-                             MaxLength="3"
-                             TextAlignment="Center" />
-                    <TextBox Name="watermarkedTxt15"
-                             Grid.Row="7"
-                             Grid.Column="1"
-                             Width="30"
-                             VerticalAlignment="Center"
-                             Cursor="IBeam"
-                             FontSize="14"
-                             GotFocus="watermarkedTxt15_GotFocus"
-                             MaxLength="3"
-                             Text="x"
-                             TextAlignment="Center" />
+                    <TextBox 
+                        Name="userInput1" 
+                        LostFocus="userInput1_LostFocus" 
+                        Cursor="IBeam" FontSize="14" 
+                        Grid.Row="0" 
+                        Grid.Column="0" 
+                        Grid.ColumnSpan="2"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Top" 
+                        TextAlignment="Center"/>
+                    <TextBox 
+                        Name="watermarkedTxt1" 
+                        GotFocus="watermarkedTxt1_GotFocus" 
+                        Cursor="IBeam" 
+                        FontSize="14" 
+                        Grid.Row="0" 
+                        Grid.Column="0" 
+                        Grid.ColumnSpan="2" 
+                        VerticalAlignment="Center"
+                        Margin="40 0"
+                        Padding="5"
+                        TextAlignment="Center" 
+                        Text="question1?"
+                        TextWrapping="Wrap" 
+                        VerticalScrollBarVisibility="Visible"/>
+                    <TextBox 
+                        Name="userInput2" 
+                        LostFocus="userInput2_LostFocus" 
+                        Cursor="IBeam" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Grid.Row="1" 
+                        Grid.Column="0"/>
+                    <TextBox 
+                        Name="watermarkedTxt2" 
+                        GotFocus="watermarkedTxt2_GotFocus" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Grid.Row="1"
+                        Grid.Column="0" 
+                        Text="answer1"/>
+                    <TextBox 
+                        Name="userInput3" 
+                        LostFocus="userInput3_LostFocus" 
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Width="30" 
+                        MaxLength="3"  
+                        Grid.Row="1"
+                        Grid.Column="1"/>
+                    <TextBox 
+                        Name="watermarkedTxt3" 
+                        GotFocus="watermarkedTxt3_GotFocus" 
+                        Text="x" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Width="30" 
+                        MaxLength="3"  
+                        Grid.Row="1" 
+                        Grid.Column="1"/>
+                    <TextBox 
+                        Name="userInput4" 
+                        LostFocus="userInput4_LostFocus" 
+                        FontSize="14" 
+                        Cursor="IBeam" 
+                        VerticalAlignment="Center" 
+                        Grid.Row="2" 
+                        Grid.Column="0"/>
+                    <TextBox 
+                        Name="watermarkedTxt4" 
+                        GotFocus="watermarkedTxt4_GotFocus" 
+                        FontSize="14" 
+                        Cursor="IBeam" 
+                        VerticalAlignment="Center" 
+                        Grid.Row="2"
+                        Grid.Column="0" 
+                        Text="answer2"/>
+                    <TextBox 
+                        Name="userInput5" 
+                        LostFocus="userInput5_LostFocus" 
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Width="30" 
+                        MaxLength="3"  
+                        Grid.Row="2" 
+                        Grid.Column="1"/>
+                    <TextBox 
+                        Name="watermarkedtxt5" 
+                        GotFocus="watermarkedtxt5_GotFocus"
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center"
+                        Width="30" MaxLength="3" 
+                        Grid.Row="2" Grid.Column="1" Text="x"/>
+                    <TextBox
+                        Name="userInput6" 
+                        LostFocus="userInput6_LostFocus"
+                        Cursor="IBeam" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Grid.Row="3"
+                        Grid.Column="0"/>
+                    <TextBox 
+                        Name="watermarkedTxt6" 
+                        GotFocus="watermarkedTxt6_GotFocus" 
+                        Cursor="IBeam" 
+                        FontSize="14" 
+                        VerticalAlignment="Center"
+                        Grid.Row="3"
+                        Grid.Column="0" 
+                        Text="answer3"/>
+                    <TextBox 
+                        Name="userInput7"
+                        LostFocus="userInput7_LostFocus" 
+                        Cursor="IBeam" 
+                        TextAlignment="Center"
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Width="30" 
+                        MaxLength="3" 
+                        Grid.Row="3" 
+                        Grid.Column="1"/>
+                    <TextBox 
+                        Name="watermarkedTxt7" 
+                        GotFocus="watermarkedTxt7_GotFocus" 
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Width="30" 
+                        MaxLength="3" 
+                        Grid.Row="3" 
+                        Grid.Column="1" 
+                        Text="x"/>
+                    <TextBox
+                        Name="userInput8" 
+                        LostFocus="userInput8_LostFocus" 
+                        Cursor="IBeam" 
+                        FontSize="14"
+                        VerticalAlignment="Center" 
+                        Grid.Row="4" 
+                        Grid.Column="0"/>
+                    <TextBox 
+                        Name="watermarkedTxt8" 
+                        GotFocus="watermarkedTxt8_GotFocus"  
+                        Cursor="IBeam" 
+                        FontSize="14" 
+                        VerticalAlignment="Center"
+                        Grid.Row="4" 
+                        Grid.Column="0" 
+                        Text="answer4"/>
+                    <TextBox 
+                        Name="userInput9"
+                        LostFocus="userInput9_LostFocus" 
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Width="30" 
+                        MaxLength="3"  
+                        Grid.Row="4" 
+                        Grid.Column="1"/>
+                    <TextBox 
+                        Name="watermarkedTxt9"
+                        GotFocus="watermarkedTxt9_GotFocus" 
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center"
+                        Width="30" 
+                        MaxLength="3"  
+                        Grid.Row="4" 
+                        Grid.Column="1" 
+                        Text="x"/>
+                    <TextBox 
+                        Name="userInput10" 
+                        LostFocus="userInput10_LostFocus" 
+                        Cursor="IBeam" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Grid.Row="5" 
+                        Grid.Column="0"/>
+                    <TextBox 
+                        Name="watermarkedtxt10"
+                        GotFocus="watermarkedtxt10_GotFocus"
+                        Cursor="IBeam"
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Grid.Row="5" 
+                        Grid.Column="0" 
+                        Text="answer5"/>
+                    <TextBox 
+                        Name="userInput11" 
+                        LostFocus="userInput11_LostFocus" 
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14"
+                        VerticalAlignment="Center" 
+                        Width="30" 
+                        MaxLength="3"  
+                        Grid.Row="5" 
+                        Grid.Column="1"/>
+                    <TextBox
+                        Name="watermarkedTxt11"
+                        GotFocus="watermarkedTxt11_GotFocus"
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Width="30"
+                        MaxLength="3"  
+                        Grid.Row="5" 
+                        Grid.Column="1" Text="x"/>
+                    <TextBox 
+                        Name="userInput12" 
+                        LostFocus="userInput12_LostFocus"
+                        Cursor="IBeam" 
+                        FontSize="14"
+                        VerticalAlignment="Center" 
+                        Grid.Row="6" 
+                        Grid.Column="0"/>
+                    <TextBox 
+                        Name="watermarkedTxt12"
+                        GotFocus="watermarkedTxt12_GotFocus" 
+                        Cursor="IBeam"
+                        FontSize="14"
+                        VerticalAlignment="Center" 
+                        Grid.Row="6" 
+                        Grid.Column="0" 
+                        Text="answer6"/>
+                    <TextBox 
+                        Name="userInput13"
+                        LostFocus="userInput13_LostFocus"
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Width="30" 
+                        MaxLength="3"  
+                        Grid.Row="6" 
+                        Grid.Column="1"/>
+                    <TextBox 
+                        Name="watermarkedTxt13" 
+                        GotFocus="watermarkedTxt13_GotFocus"
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center"
+                        Width="30" 
+                        MaxLength="3" 
+                        Grid.Row="6" 
+                        Grid.Column="1" 
+                        Text="x"/>
+                    <TextBox
+                        Name="userInput14"
+                        LostFocus="userInput14_LostFocus"
+                        Cursor="IBeam"
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Grid.Row="7" 
+                        Grid.Column="0"/>
+                    <TextBox 
+                        Name="watermarkedtxt14" 
+                        GotFocus="watermarkedtxt14_GotFocus"
+                        Cursor="IBeam" 
+                        FontSize="14"
+                        VerticalAlignment="Center" 
+                        Grid.Row="7"
+                        Grid.Column="0" 
+                        Text="answer7"/>
+                    <TextBox 
+                        Name="userInput15"
+                        LostFocus="userInput15_LostFocus"
+                        Cursor="IBeam" 
+                        TextAlignment="Center" 
+                        FontSize="14" 
+                        VerticalAlignment="Center"
+                        Width="30"
+                        MaxLength="3" 
+                        Grid.Row="7"
+                        Grid.Column="1"/>
+                    <TextBox 
+                        Name="watermarkedTxt15" 
+                        GotFocus="watermarkedTxt15_GotFocus"
+                        Cursor="IBeam"
+                        TextAlignment="Center"
+                        FontSize="14" 
+                        VerticalAlignment="Center" 
+                        Width="30"
+                        MaxLength="3" 
+                        Grid.Row="7"
+                        Grid.Column="1"
+                        Text="x"/>
                 </Grid>
             </StackPanel>
-            <Button Grid.Row="5"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    MaxWidth="120"
-                    Cursor="Hand"
-                    FontSize="14">
-                save
+            <StackPanel 
+                Grid.Row="3" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="2" 
+                MaxWidth="600">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="540"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </StackPanel>
+            <Button 
+                Cursor="Hand" 
+                Grid.Row="5"
+                Grid.Column="1" 
+                Grid.ColumnSpan="2" 
+                MaxWidth="120" 
+                FontSize="14"
+                Content="save">
             </Button>
         </Grid>
     </DockPanel>

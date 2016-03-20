@@ -5,8 +5,202 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         mc:Ignorable="d"
-        Title="Creation_Window3" Height="300" Width="300">
-    <Grid>
-        
-    </Grid>
+        Title="Creation_Window3"  Width="740"
+        Height="540"
+        MinHeight="515"
+        MinWidth="500">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Height="20"
+                      FontSize="14"
+                      Header="Menu">
+                <MenuItem Height="20"
+                          FontSize="14"
+                          Header="Profile" />
+                <MenuItem Height="20"
+                          FontSize="14"
+                          Header="New test">
+                    <MenuItem Height="20"
+                              FontSize="14"
+                              Header="Take" />
+                    <MenuItem Height="20"
+                              FontSize="14"
+                              Header="Create" />
+                </MenuItem>
+                <MenuItem Height="20"
+                          FontSize="14"
+                          Header="Log out" />
+                <MenuItem Cursor="Help" Height="20"
+                          FontSize="14"
+                          Header="About">
+                    <MenuItem Height="20"
+                              FontSize="14"
+                              Header="Read" />
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Margin="20 20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0"
+                       Grid.RowSpan="2"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="14"
+                       Text="RANGE MANAGER"/>
+            <TextBlock Grid.Row="2"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="selected test1">
+            </TextBlock>
+            <TextBox Grid.Row="5" 
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     TextAlignment="Left"
+                     FontSize="14"
+                     Name="textBox2"
+                     TextWrapping="Wrap" 
+                     Margin="100 0"
+                     Padding="15"
+                     VerticalAlignment="Center"
+                     VerticalScrollBarVisibility="Visible">
+                <TextBox.Style>
+                    <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                        <Style.Resources>
+                            <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center"  Stretch="None">
+                                <VisualBrush.Visual>
+                                    <Label Content="Recommendation" FontSize="14"  Foreground="LightGray" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <TextBlock Grid.Row="4"
+                       Grid.Column="0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Width="100"
+                       FontSize="14"
+                       Text="range top"
+                       TextAlignment="Center">
+            </TextBlock>
+            <TextBlock Grid.Row="4"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Width="100"
+                       FontSize="14"
+                       Text="range bottom"
+                       TextAlignment="Center">
+            </TextBlock>
+            <TextBox Grid.Row="4"
+                     Grid.Column="0"
+                     FontSize="14"
+                     Margin="10 10"
+                     TextAlignment="Center"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Right"
+                     Width="30"
+                     Name="textBox1">
+                <TextBox.Style>
+                    <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                        <Style.Resources>
+                            <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                                <VisualBrush.Visual>
+                                    <Label Content="X" FontSize="14"  Foreground="LightGray" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <TextBox Grid.Row="4"
+                     Grid.Column="1"
+                            FontSize="14"
+                             Margin="10 10"
+                             TextAlignment="Center"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Left"
+                             Width="30">
+                <TextBox.Style>
+                    <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                        <Style.Resources>
+                            <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                                <VisualBrush.Visual>
+                                    <Label Content="Y" FontSize="14" Foreground="LightGray" />
+                                </VisualBrush.Visual>
+                            </VisualBrush>
+                        </Style.Resources>
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="Text" Value="{x:Null}">
+                                <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="Background" Value="White" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <Border Grid.Row="4"
+                    Grid.RowSpan="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    BorderBrush="Black"
+                    BorderThickness="1">
+            </Border>
+            <Button 
+                Cursor="Hand" 
+                Grid.Row="8"
+                Grid.Column="0" 
+                Grid.ColumnSpan="2" 
+                MaxWidth="120" 
+                FontSize="14"
+                Content="Next">
+            </Button>
+        </Grid>
+    </DockPanel>
 </Window>
