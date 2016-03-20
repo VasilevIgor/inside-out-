@@ -9,7 +9,7 @@
         Height="400"
         MinWidth="420"
         MinHeight="380"
-        DataContext="{Binding RegisterProfole,
+        DataContext="{Binding RegisterProfile,
                               Source={StaticResource Locator}}"
         mc:Ignorable="d">
     <Grid Margin="20 20" VerticalAlignment="Center">

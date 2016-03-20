@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Socionic_tests.Model;
 
 namespace Socionic_tests.Skins
 {
@@ -19,9 +20,14 @@ namespace Socionic_tests.Skins
     /// </summary>
     public partial class MainWindow : Window
     {
+       
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        
+
+
     }
 }

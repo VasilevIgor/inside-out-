@@ -15,6 +15,7 @@ namespace Socionic_tests.ViewModel
         /// </summary>
         public RegistrationViewModel1()
         {
+            
         }
     }
 }
