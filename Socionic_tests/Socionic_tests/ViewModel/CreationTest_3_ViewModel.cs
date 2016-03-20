@@ -1,5 +1,4 @@
 ﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
 
 namespace Socionic_tests.ViewModel
 {
@@ -9,18 +8,13 @@ namespace Socionic_tests.ViewModel
     /// See http://www.galasoft.ch/mvvm
     /// </para>
     /// </summary>
-    public class RegistrationViewModel1 : ViewModelBase
+    public class CreationTest_3_ViewModel : ViewModelBase
     {
         /// <summary>
-        /// Initializes a new instance of the RegistrationViewModel1 class.
+        /// Initializes a new instance of the CreationTest_3_ViewModel class.
         /// </summary>
-        private ViewModelLocator _lockator;
-        public RegistrationViewModel1()
+        public CreationTest_3_ViewModel()
         {
-            _lockator = new ViewModelLocator();
-            
         }
-
-   
     }
 }

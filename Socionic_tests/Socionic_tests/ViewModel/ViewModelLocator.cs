@@ -38,6 +38,8 @@ namespace Socionic_tests.ViewModel
              SimpleIoc.Default.Register<RegistrationViewModel1>();
              SimpleIoc.Default.Register<TestingViewModel1>();
              SimpleIoc.Default.Register<TestSelectionViewModel1>();
+            SimpleIoc.Default.Register<ReccomendationVievModel>();
+            SimpleIoc.Default.Register<CreationTest_3_ViewModel>();
         }
 
         /// <summary>
@@ -54,6 +56,20 @@ namespace Socionic_tests.ViewModel
                 return new NavigationService();
             }
             
+        }
+        public CreationTest_3_ViewModel TestCreationPart_3
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<CreationTest_3_ViewModel>();
+            }
+        }
+        public ReccomendationVievModel Reccomendation
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<ReccomendationVievModel>();
+            }
         }
         public MainViewModel Main
         {

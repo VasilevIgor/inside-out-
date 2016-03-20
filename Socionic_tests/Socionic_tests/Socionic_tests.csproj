@@ -181,10 +181,12 @@
     <Compile Include="users.cs">
       <DependentUpon>ModelDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\CreationTest_3_ViewModel.cs" />
     <Compile Include="ViewModel\CreationVievModel_2.cs" />
     <Compile Include="ViewModel\CreationViewModel1.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ProfileViewModel1.cs" />
+    <Compile Include="ViewModel\ReccomendationVievModel.cs" />
     <Compile Include="ViewModel\RegistrationViewModel1.cs" />
     <Compile Include="ViewModel\TestingViewModel1.cs" />
     <Compile Include="ViewModel\TestSelectionViewModel1.cs" />

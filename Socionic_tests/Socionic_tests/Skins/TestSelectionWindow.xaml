@@ -122,6 +122,7 @@
                     MaxWidth="100"
                     MaxHeight="30"
                     VerticalAlignment="Center"
+                    Command="{Binding BeginCommand}"
                     Content="Begin"
                     Cursor="Hand"
                     FontSize="14" />

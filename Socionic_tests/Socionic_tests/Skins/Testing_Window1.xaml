@@ -65,6 +65,7 @@
                 MaxWidth="100"
                 MaxHeight="30"
                 VerticalAlignment="Center"
+                Command="{Binding GoToReccomendation}"
                 Content="Next"
                 Cursor="Hand"
                 FontSize="14" />

@@ -9,22 +9,21 @@ namespace Socionic_tests.ViewModel
     /// See http://www.galasoft.ch/mvvm
     /// </para>
     /// </summary>
-    public class TestSelectionViewModel1 : ViewModelBase
+    public class ReccomendationVievModel : ViewModelBase
     {
         /// <summary>
-        /// Initializes a new instance of the TestSelectionViewModel1 class.
+        /// Initializes a new instance of the ReccomendationVievModel class.
         /// </summary>
         private ViewModelLocator _lockator;
-        public TestSelectionViewModel1()
+        public ReccomendationVievModel()
         {
             _lockator = new ViewModelLocator();
-            BeginCommand = new RelayCommand(BeginPressed);
+            GoTestAgain = new RelayCommand(TestingAgain);
         }
-
-        private void BeginPressed()
+        private void TestingAgain()
         {
-            _lockator.NavigationService.NavigateTo("testing");
+            _lockator.NavigationService.NavigateTo("profile");
         }
-        public RelayCommand BeginCommand { get; set; }
+        public RelayCommand GoTestAgain { get; set; }
     }
 }

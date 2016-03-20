@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 namespace Socionic_tests.ViewModel
 {
@@ -13,8 +14,17 @@ namespace Socionic_tests.ViewModel
         /// <summary>
         /// Initializes a new instance of the TestingViewModel1 class.
         /// </summary>
+        private ViewModelLocator _lockator;
         public TestingViewModel1()
         {
+            _lockator = new ViewModelLocator();
+            GoToReccomendation = new RelayCommand(OpenReccomendationPage);
         }
+
+        private void OpenReccomendationPage()
+        {
+            _lockator.NavigationService.NavigateTo("reccomendation");
+        }
+        public RelayCommand GoToReccomendation { get; set; }
     }
 }
