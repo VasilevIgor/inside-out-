@@ -37,6 +37,12 @@
                    FontSize="14">
             WELCOME TO INSIDE OUT
         </TextBlock>
+        <Border Grid.Row="1"
+                Grid.RowSpan="4"
+                Grid.Column="0"
+                Margin="0,48,0.333,2"
+                BorderBrush="Black"
+                BorderThickness="1" />
         <StackPanel Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
@@ -79,12 +85,6 @@
                          Text="{Binding Password}" />
             </Grid>
         </StackPanel>
-        <Border Grid.Row="2"
-                Grid.RowSpan="3"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                BorderBrush="Black"
-                BorderThickness="1" />
         <Button Name="signIn"
                 Grid.Row="3"
                 Grid.RowSpan="2"

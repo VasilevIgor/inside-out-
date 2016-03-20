@@ -16,14 +16,15 @@ namespace Socionic_tests.Model
             Window winObj;
             if(_windows.TryGetValue(window, out winObj))
             {
-                winObj.ShowDialog();
+                winObj.Show();
             }
         }
         public NavigationService()
         {
+            
             _windows["main"] = new MainWindow();
             _windows["profile"] = new ProfileWindow();
-            _windows["registration"] = new RegistrationWindow();
+            _windows["reg"] = new RegistrationWindow();
             _windows["testing"] = new Testing_Window1();
             _windows["TestSelection"] = new TestSelectionWindow();
             _windows["reccomendation"] = new RecommendationWindow();

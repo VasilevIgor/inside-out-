@@ -25,6 +25,7 @@ namespace Socionic_tests.ViewModel
     /// </summary>
     public class ViewModelLocator
     {
+       
         static ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
@@ -46,6 +47,14 @@ namespace Socionic_tests.ViewModel
             "CA1822:MarkMembersAsStatic",
             Justification = "This non-static member is needed for data binding purposes.")]
       //  ServiceLocator.Current.GetInstance<MainViewModel>();
+        public INavigationService NavigationService 
+        {
+            get
+            {
+                return new NavigationService();
+            }
+            
+        }
         public MainViewModel Main
         {
             get
@@ -81,7 +90,7 @@ namespace Socionic_tests.ViewModel
                 return ServiceLocator.Current.GetInstance<ProfileViewModel1>();
             }
         }
-        public RegistrationViewModel1 RegisterProfole
+        public RegistrationViewModel1 RegisterProfile
         {
             get
             {

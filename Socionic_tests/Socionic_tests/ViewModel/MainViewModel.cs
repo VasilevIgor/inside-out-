@@ -14,13 +14,14 @@ namespace Socionic_tests.ViewModel
     public class MainViewModel : ViewModelBase
     {
         public UserDataItem User { get; set; }
-        public ICommand LogInCommand { get; private set; }
-       // private INavigationService _navigationService = new NavigationService();
+        public RelayCommand LogInCommand { get; private set; }
+        private ViewModelLocator _lockator;
         public MainViewModel()
         {
+            _lockator = new ViewModelLocator();
             SignUp = new RelayCommand(Sign_Up);
             LogVK = new RelayCommand(Log_VK);
-          LogInCommand = new RelayCommand(this.OnLogInCommand);
+          LogInCommand = new RelayCommand(OnLogInCommand);
         }
 
 
@@ -31,16 +32,16 @@ namespace Socionic_tests.ViewModel
 
         private void Sign_Up()
         {
-    //        _navigationService.NavigateTo("registration");
+            _lockator.NavigationService.NavigateTo("profile");
         }
         public RelayCommand SignUp { get; set; }
         public RelayCommand LogVK { get; set; }
 
         private void OnLogInCommand()
         {
-              string testUsername = Username;
-              string testPassword = Password;
-      // _navigationService.NavigateTo("registration");
+           //   string testUsername = Username;
+            //  string testPassword = Password;
+              _lockator.NavigationService.NavigateTo("reg");
         }
 
     #region Properties
