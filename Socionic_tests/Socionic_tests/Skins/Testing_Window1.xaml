@@ -5,36 +5,34 @@
         xmlns:local="clr-namespace:Socionic_tests.Skins"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="Testing_Window1"
-        Height="300" 
-        Width="500" 
-        MinWidth="370" 
-        MinHeight="270"
+        Width="720"
+        Height="480"  
+        MinWidth="560"
+        MinHeight="420"
         mc:Ignorable="d">
-    <Grid>
+    <Grid Margin="20 20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
             <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <TextBlock 
-            Grid.Row="1" 
             Grid.Column="0" 
             Grid.ColumnSpan="2" 
             VerticalAlignment="Center" 
             HorizontalAlignment="Center" 
-            FontSize="14">
-            Question1?
-        </TextBlock>
+            FontSize="14"
+            Text="Question1?"
+            TextAlignment="Center"/>
         <TextBlock 
-            Grid.Row="2" 
+            Grid.Row="1" 
             Grid.Column="0" 
             Grid.ColumnSpan="2" 
             VerticalAlignment="Center" 
@@ -43,23 +41,33 @@
             choose answer
         </TextBlock>
         <ComboBox 
-            Grid.Row="3" 
+            Grid.Row="2" 
             Grid.Column="0" 
             Grid.ColumnSpan="2" 
-            VerticalAlignment="Center" 
+            VerticalAlignment="Center"
             Margin="80 0" 
             FontSize="14">
-            answers
+            <ComboBoxItem Content="answer1"></ComboBoxItem>
+            <ComboBoxItem Content="answer2"></ComboBoxItem>
+            <ComboBoxItem Content="answer3"></ComboBoxItem>
+            <ComboBoxItem Content="answer4"></ComboBoxItem>
         </ComboBox>
+        <Border Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BorderBrush="Black"
+                BorderThickness="1">
+        </Border>
         <Button 
-            Grid.Row="6" 
+            Grid.Row="4" 
             Grid.Column="0" 
             Grid.ColumnSpan="2" 
             VerticalAlignment="Center" 
             MaxWidth="130" 
             MinWidth="100" 
-            FontSize="14">
-            next
+            FontSize="14"
+            Content="Next">
         </Button>
     </Grid>
 </Window>
